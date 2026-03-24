@@ -57,7 +57,7 @@ public:
      * Signature: void callback(T& data)
      * The parameter is T& so the callback may read or print the value.
      * The caller must NOT modify data in a way that breaks the BST ordering
-     * invariant; enforcing this is the caller's responsibility.
+     * invariant as this is non-const; enforcing this is the caller's responsibility.
      */
     typedef void (*f1Typ)(T&);
 
