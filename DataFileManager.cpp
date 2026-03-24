@@ -7,6 +7,7 @@
 DataFileManager::DataFileManager()
     : m_filesLoaded(0), m_duplicateCount(0), m_fileCount(0)
 {
+    // m_timestampBst default-constructs to an empty tree
 }
 
 int DataFileManager::ReadDataSourceFile(const std::string& dataSourceFile,
@@ -51,10 +52,10 @@ int DataFileManager::LoadDataFiles(const Vector<std::string>& filenames,
     m_duplicateCount  = 0;
     m_fileCount       = filenames.Size();
 
-    // Pre-size hash set and records vector to avoid rehashing / reallocation.
-    m_timestampSet.clear();
-    m_timestampSet.reserve(700000);
-    records.Reserve(700000);
+    // Reset the duplicate-detection BST for this load session.
+    // Bst<long long> copy-assignment replaces the existing tree with
+    // a freshly default-constructed (empty) one.
+    m_timestampBst = Bst<long long>();
 
     for (int i = 0; i < filenames.Size() && i < MAX_FILE_RESULTS; i++)
     {
@@ -68,10 +69,11 @@ int DataFileManager::LoadDataFiles(const Vector<std::string>& filenames,
 
             for (int j = 0; j < tempRecords.Size(); j++)
             {
-                // O(1) average lookup instead of O(n) linear scan
+                // O(log n) duplicate check via Bst<long long>::search
                 if (!IsDuplicateRecord(records, tempRecords[j]))
                 {
-                    m_timestampSet.insert(MakeTimestampKey(tempRecords[j]));
+                    long long key = MakeTimestampKey(tempRecords[j]);
+                    m_timestampBst.insert(key);     // O(log n) insert
                     records.Append(tempRecords[j]);
                     newRecords++;
                 }
@@ -121,18 +123,19 @@ std::string DataFileManager::GetFileResult(int index) const
     return m_fileResults[index];
 }
 
-bool DataFileManager::IsDuplicateRecord(const Vector<WeatherRecord>& /*records*/,
+bool DataFileManager::IsDuplicateRecord(const Vector<WeatherRecord>&,
                                         const WeatherRecord& newRecord) const
 {
-    // O(1) average lookup via the pre-built integer hash set.
-    return m_timestampSet.count(MakeTimestampKey(newRecord)) > 0;
+    // O(log n) BST search
+    return m_timestampBst.search(MakeTimestampKey(newRecord));
 }
 
 long long DataFileManager::MakeTimestampKey(const WeatherRecord& record) const
 {
     // Encode date and time into a single 64-bit integer:
     //   year * 100,000,000 + month * 1,000,000 + day * 10,000
-    //                      + hour * 100 + minute
+    //                      + hour  *       100 + minute
+    // Unique for any valid (year, month, day, hour, minute) combination.
     Date d = record.GetDate();
     Time t = record.GetTime();
 
