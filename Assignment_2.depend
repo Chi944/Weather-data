@@ -1,0 +1,103 @@
+# depslib dependency file v1.0
+1774363760 source:c:\users\desto\desktop\murdoch\ict283\assignment 2\assignment_2\calculator.cpp
+	"Calculator.h"
+	"Stats.h"
+
+1774363738 c:\users\desto\desktop\murdoch\ict283\assignment 2\assignment_2\calculator.h
+	"WeatherDataStore.h"
+	"Constants.h"
+
+1774381185 c:\users\desto\desktop\murdoch\ict283\assignment 2\assignment_2\weatherdatastore.h
+	"Map.h"
+	"Vector.h"
+	"WeatherRecord.h"
+	"Bst.h"
+	"Constants.h"
+
+1774381112 c:\users\desto\desktop\murdoch\ict283\assignment 2\assignment_2\map.h
+	"Vector.h"
+
+1774364214 c:\users\desto\desktop\murdoch\ict283\assignment 2\assignment_2\vector.h
+	<vector>
+
+1774364217 c:\users\desto\desktop\murdoch\ict283\assignment 2\assignment_2\weatherrecord.h
+	"Date.h"
+	"Time.h"
+
+1774364443 c:\users\desto\desktop\murdoch\ict283\assignment 2\assignment_2\date.h
+
+1774364529 c:\users\desto\desktop\murdoch\ict283\assignment 2\assignment_2\time.h
+
+1774381117 c:\users\desto\desktop\murdoch\ict283\assignment 2\assignment_2\bst.h
+	<iostream>
+
+1774364893 c:\users\desto\desktop\murdoch\ict283\assignment 2\assignment_2\constants.h
+
+1774362577 c:\users\desto\desktop\murdoch\ict283\assignment 2\assignment_2\stats.h
+	"Vector.h"
+
+1774364820 source:c:\users\desto\desktop\murdoch\ict283\assignment 2\assignment_2\datafilemanager.cpp
+	"DataFileManager.h"
+	<fstream>
+	<sstream>
+	<string>
+
+1774364803 c:\users\desto\desktop\murdoch\ict283\assignment 2\assignment_2\datafilemanager.h
+	"Vector.h"
+	"WeatherRecord.h"
+	"DataLoader.h"
+	"Constants.h"
+	<string>
+	<unordered_set>
+
+1774364714 c:\users\desto\desktop\murdoch\ict283\assignment 2\assignment_2\dataloader.h
+	"Vector.h"
+	"WeatherRecord.h"
+	<fstream>
+	<sstream>
+	<string>
+
+1774364774 source:c:\users\desto\desktop\murdoch\ict283\assignment 2\assignment_2\dataloader.cpp
+	"DataLoader.h"
+	"Constants.h"
+	<fstream>
+	<sstream>
+	<string>
+
+1774364441 source:c:\users\desto\desktop\murdoch\ict283\assignment 2\assignment_2\date.cpp
+	"Date.h"
+
+1774363924 source:c:\users\desto\desktop\murdoch\ict283\assignment 2\assignment_2\main.cpp
+	"Vector.h"
+	"WeatherRecord.h"
+	"DataLoader.h"
+	"DataFileManager.h"
+	"WeatherDataStore.h"
+	"Calculator.h"
+	"OutputHandler.h"
+	"MenuHandler.h"
+	"Constants.h"
+	<iostream>
+	<string>
+
+1774381313 c:\users\desto\desktop\murdoch\ict283\assignment 2\assignment_2\outputhandler.h
+	<fstream>
+	<string>
+
+1774363374 c:\users\desto\desktop\murdoch\ict283\assignment 2\assignment_2\menuhandler.h
+	"WeatherDataStore.h"
+	"Calculator.h"
+	"OutputHandler.h"
+	<string>
+
+1774362575 source:c:\users\desto\desktop\murdoch\ict283\assignment 2\assignment_2\stats.cpp
+	"Stats.h"
+	"Vector.h"
+	<cmath>
+
+1774364515 source:c:\users\desto\desktop\murdoch\ict283\assignment 2\assignment_2\time.cpp
+	"Time.h"
+
+1774364237 source:c:\users\desto\desktop\murdoch\ict283\assignment 2\assignment_2\weatherrecord.cpp
+	"WeatherRecord.h"
+
