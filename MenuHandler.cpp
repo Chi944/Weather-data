@@ -10,10 +10,6 @@ MenuHandler::MenuHandler()
 {
 }
 
-// ---------------------------------------------------------------------------
-// Static visitor — signature void (*)(int&) matches Bst<int>::f1Typ exactly
-// ---------------------------------------------------------------------------
-
 void MenuHandler::PrintYear(int& year)
 {
     std::cout << year << " ";
@@ -60,7 +56,9 @@ void MenuHandler::DisplayWelcome(int recordCount) const
 void MenuHandler::DisplayAvailableYears(const WeatherDataStore& store) const
 {
     std::cout << "Available years in data: ";
-    // BST in-order traversal via function pointer PrintYear — prints ascending
+    // Passes static function pointer PrintYear to BST in-order traversal.
+    // PrintYear's signature void (*)(int&) matches Bst<int>::f1Typ.
+    // Years are printed in ascending order by the BST.
     store.TraverseYears(PrintYear);
     std::cout << std::endl;
 }
@@ -105,6 +103,7 @@ void MenuHandler::HandleOption3(const WeatherDataStore& store,
                                 const Calculator& calc,
                                 const OutputHandler& output) const
 {
+    // Option 3 asks for a month; data is collected across ALL loaded years
     int month = GetMonthInput();
 
     float s_t = 0.0f, s_r = 0.0f, t_r = 0.0f;
@@ -130,7 +129,10 @@ void MenuHandler::HandleOption4(const WeatherDataStore& store,
         return;
     }
 
+    // Write the year on the first line (always)
     output.WriteCSVHeader(file, year);
+
+    bool anyData = false;
 
     for (int month = 1; month <= 12; month++)
     {
@@ -144,13 +146,22 @@ void MenuHandler::HandleOption4(const WeatherDataStore& store,
                                                   tMean, tStd, tMAD);
         bool hasSolar = calc.CalculateSolarTotal(store, month, year, solar);
 
+        // Only output months that have at least some data
         if (hasWind || hasTemp || hasSolar)
         {
+            anyData = true;
             output.WriteCSVRow(file, month,
                                hasWind,  wMean, wStd, wMAD,
                                hasTemp,  tMean, tStd, tMAD,
                                hasSolar, solar);
         }
+    }
+
+    // If the entire year's data is not available, output just
+    // the year on the first line and the message 'No Data' on the second line
+    if (!anyData)
+    {
+        output.WriteCSVNoData(file);
     }
 
     file.close();

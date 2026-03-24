@@ -13,7 +13,7 @@
      * CSV file methods accept std::ofstream& so the caller controls file lifetime.
      *
      * @author Deston
-     * @version 2.0
+     * @version 2.1
      * @date 24/03/2026
      */
 class OutputHandler
@@ -23,7 +23,7 @@ public:
     OutputHandler();
 
     /**
-     * @brief Display wind speed statistics for a single month/year.
+     * @brief Display wind speed statistics for a single month/year (option 1).
      * @param month  Month number (1-12).
      * @param year   Calendar year.
      * @param mean   Mean wind speed in km/h.
@@ -39,7 +39,7 @@ public:
     void DisplayNoData(int month, int year) const;
 
     /**
-     * @brief Display the temperature section header (year only).
+     * @brief Display the temperature section year header (option 2).
      * @param year Year being reported.
      */
     void DisplayTempHeader(int year) const;
@@ -59,13 +59,13 @@ public:
     void DisplayNoDataForMonth(int month) const;
 
     /**
-     * @brief Display the sPCC section header showing the selected month name.
+     * @brief Display the sPCC section header showing the selected month (option 3).
      * @param month Month number (1-12).
      */
     void DisplaySPCCHeader(int month) const;
 
     /**
-     * @brief Display the three sPCC values (S_T, S_R, T_R) for option 3.
+     * @brief Display the three sPCC values: S_T, S_R, T_R (option 3).
      * @param s_t  sPCC for Wind Speed vs Temperature.
      * @param s_r  sPCC for Wind Speed vs Solar Radiation.
      * @param t_r  sPCC for Temperature vs Solar Radiation.
@@ -79,17 +79,21 @@ public:
     void DisplaySPCCNoData(int month) const;
 
     /**
-     * @brief Write the year header line to an open CSV file.
+     * @brief Write the year header line to an open CSV file (option 4).
      * @param file Open output stream.
      * @param year Year being reported.
      */
     void WriteCSVHeader(std::ofstream& file, int year) const;
 
     /**
-     * @brief Write one month row to the CSV file with stdev AND MAD.
+     * @brief Write one month data row to the CSV file with stdev AND MAD (option 4).
      *
-     * Format per A2 spec:
-     * Month,windMean(windStdDev, windMAD),tempMean(tempStdDev, tempMAD),solar
+     * Output format per A2 spec:
+     * MonthName, windMean(windStdDev, windMAD),tempMean(tempStdDev, tempMAD),solar
+     *
+     * If a field has no data (hasWind/hasTemp/hasSolar = false) the field
+     * is left blank between its surrounding commas, e.g.:
+     * February, 4.5(3.1, 2.9),,200.3
      *
      * @param file        Open output stream.
      * @param month       Month number (1-12).
@@ -108,6 +112,18 @@ public:
                      bool hasWind,  float windMean,  float windStdDev,  float windMAD,
                      bool hasTemp,  float tempMean,  float tempStdDev,  float tempMAD,
                      bool hasSolar, float solarTotal) const;
+
+    /**
+     * @brief Write "No Data" to the CSV file when an entire year has no records.
+     *
+     * Per A2 spec: "If the entire year's data is not available, output just the
+     * year on the first line and the message 'No Data' on the second line."
+     * The year header is already written by WriteCSVHeader; this method writes
+     * the second line.
+     *
+     * @param file Open output stream.
+     */
+    void WriteCSVNoData(std::ofstream& file) const;
 
     /**
      * @brief Display confirmation that the CSV file was written successfully.
