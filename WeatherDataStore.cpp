@@ -2,7 +2,7 @@
 
 WeatherDataStore::WeatherDataStore()
 {
-    // std::map and Bst<int> default-construct to empty — nothing else needed
+    // Map<> and Bst<int> default-construct to empty — nothing else needed
 }
 
 float WeatherDataStore::ToKmh(float mps)
@@ -18,39 +18,33 @@ void WeatherDataStore::Build(const Vector<WeatherRecord>& records)
         int year  = r.GetDate().GetYear();
         int month = r.GetDate().GetMonth();
 
-        // Insert into map — bucket created automatically if absent
+        // Map::operator[] creates the inner Map and MonthlyData if absent,
+        // then returns a reference — no explicit existence check needed.
         MonthlyData& md = m_data[year][month];
         md.windSpeeds.Append(ToKmh(r.GetWindSpeed()));
         md.temperatures.Append(r.GetTemperature());
         md.solarRaw.Append(r.GetSolarRadiation());
 
-        // Insert year into BST — duplicate silently rejected by Bst::insert
+        // BST silently rejects duplicate years — exactly what we need
         m_yearBst.insert(year);
     }
 }
 
 bool WeatherDataStore::HasData(int year, int month) const
 {
-    std::map<int, std::map<int, MonthlyData> >::const_iterator yit =
-        m_data.find(year);
-    if (yit == m_data.end()) return false;
+    // getPtr returns nullptr if the year key is absent (no modification)
+    const Map<int, MonthlyData>* yearMap = m_data.getPtr(year);
+    if (yearMap == nullptr) return false;
 
-    std::map<int, MonthlyData>::const_iterator mit =
-        yit->second.find(month);
-    return (mit != yit->second.end() && !mit->second.windSpeeds.Empty());
+    return yearMap->contains(month);
 }
 
 const MonthlyData* WeatherDataStore::GetMonthData(int year, int month) const
 {
-    std::map<int, std::map<int, MonthlyData> >::const_iterator yit =
-        m_data.find(year);
-    if (yit == m_data.end()) return nullptr;
+    const Map<int, MonthlyData>* yearMap = m_data.getPtr(year);
+    if (yearMap == nullptr) return nullptr;
 
-    std::map<int, MonthlyData>::const_iterator mit =
-        yit->second.find(month);
-    if (mit == yit->second.end()) return nullptr;
-
-    return &(mit->second);
+    return yearMap->getPtr(month);
 }
 
 void WeatherDataStore::GetMonthDataAllYears(int month,
@@ -58,28 +52,27 @@ void WeatherDataStore::GetMonthDataAllYears(int month,
                                              Vector<float>& temps,
                                              Vector<float>& solarRaw) const
 {
-    std::map<int, std::map<int, MonthlyData> >::const_iterator yit;
-    for (yit = m_data.begin(); yit != m_data.end(); ++yit)
+    // Index-based iteration over the outer Map (all years)
+    for (int i = 0; i < m_data.size(); i++)
     {
-        std::map<int, MonthlyData>::const_iterator mit =
-            yit->second.find(month);
+        const Map<int, MonthlyData>& monthMap = m_data.getValue(i);
+        const MonthlyData* md = monthMap.getPtr(month);
 
-        if (mit == yit->second.end()) continue;
+        if (md == nullptr) continue;   // this year has no data for 'month'
 
-        const MonthlyData& md = mit->second;
-        for (int i = 0; i < md.windSpeeds.Size(); i++)
+        for (int j = 0; j < md->windSpeeds.Size(); j++)
         {
-            winds.Append(md.windSpeeds[i]);
-            temps.Append(md.temperatures[i]);
-            solarRaw.Append(md.solarRaw[i]);
+            winds.Append(md->windSpeeds[j]);
+            temps.Append(md->temperatures[j]);
+            solarRaw.Append(md->solarRaw[j]);
         }
     }
 }
 
 void WeatherDataStore::TraverseYears(void (*visit)(int&)) const
 {
-    // inOrderTraversal is the Bst<T> method that accepts an f1Typ callback.
-    // This is the function-pointer usage required by Assignment 2.
+    // Delegates to Bst<int>::inOrderTraversal — function-pointer usage
+    // required by Assignment 2
     m_yearBst.inOrderTraversal(visit);
 }
 
