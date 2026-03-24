@@ -111,8 +111,6 @@ void OutputHandler::WriteCSVRow(std::ofstream& file, int month,
                                 float tempStdDev,  float tempMAD,
                                 bool hasSolar, float solarTotal) const
 {
-    // A2 spec example: "January, 5.5(1.2, 1.1),25.5(12.2, 11.3),196.4"
-    // Space after month comma; spaces inside parentheses around stdev/mad.
     file << std::fixed << std::setprecision(1);
     file << GetMonthName(month) << ", ";    // space after month comma
 
@@ -134,8 +132,8 @@ void OutputHandler::WriteCSVRow(std::ofstream& file, int month,
 
 void OutputHandler::WriteCSVNoData(std::ofstream& file) const
 {
-    // A2 spec: "If the entire year's data is not available, output just
-    // the year on the first line and the message 'No Data' on the second."
+    // If the entire year's data is not available, output just
+    // the year on the first line and the message 'No Data' on the second
     file << "No Data" << std::endl;
 }
 

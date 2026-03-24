@@ -2,7 +2,7 @@
 
 WeatherDataStore::WeatherDataStore()
 {
-    // Map<> and Bst<int> default-construct to empty — nothing else needed
+    // Map<> and Bst<int> default-construct to empty
 }
 
 float WeatherDataStore::ToKmh(float mps)
@@ -25,14 +25,14 @@ void WeatherDataStore::Build(const Vector<WeatherRecord>& records)
         md.temperatures.Append(r.GetTemperature());
         md.solarRaw.Append(r.GetSolarRadiation());
 
-        // BST silently rejects duplicate years — exactly what we need
+        // BST silently rejects duplicate years
         m_yearBst.insert(year);
     }
 }
 
 bool WeatherDataStore::HasData(int year, int month) const
 {
-    // getPtr returns nullptr if the year key is absent (no modification)
+    // getPtr returns nullptr if the year key is absent
     const Map<int, MonthlyData>* yearMap = m_data.getPtr(year);
     if (yearMap == nullptr) return false;
 

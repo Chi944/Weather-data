@@ -181,7 +181,6 @@ static void test7()
 {
     Vector<WeatherRecord> records;
     // Build with 2022 data; then query a year that has no monthly records
-    // (We test WriteCSVNoData directly)
     OutputHandler output;
     std::ofstream file("WindTempSolar_nodata.csv");
     output.WriteCSVHeader(file, 2099);
