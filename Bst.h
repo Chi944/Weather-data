@@ -9,18 +9,41 @@
      *
      * @details
      * Stores any type T that supports operator< and operator==.
-     * All tree operations are implemented recursively.
      * Duplicate values are silently rejected.
      *
      * Traversal methods accept a function pointer (f1Typ) so the caller
      * controls what happens at each visited node, enabling decoupled,
-     * reusable callback behaviour as described in the textbook chapter
-     * "Binary Tree Traversal and Functions as Parameters".
+     * reusable callback behaviour.
+     *
+     * ITERATIVE vs RECURSIVE design decision
+     * ----------------------------------------
+     * Three methods are ITERATIVE: insert(), search(), destroyTree().
+     * All other methods remain RECURSIVE.
+     *
+     * Reason: this BST is instantiated in two places:
+     *
+     *   1. Bst<int> in WeatherDataStore  — stores ~15 unique calendar years.
+     *      A 15-node tree has a maximum recursion depth of 15. Recursive is
+     *      completely safe and simpler to read.
+     *
+     *   2. Bst<long long> in DataFileManager — stores up to ~509,000 unique
+     *      timestamp keys (one per weather record). The CSV source files are
+     *      sorted in ascending timestamp order, so each new key is larger
+     *      than all previous ones. Every insert therefore takes the right
+     *      branch, producing a completely right-skewed tree whose depth equals
+     *      the number of nodes. Calling insertHelper, searchHelper, or
+     *      destroyTree recursively on a 509,000-deep tree exhausts the Windows
+     *      default ~1 MB call stack and causes STATUS_STACK_OVERFLOW (0xC00000FD).
+     *
+     *   Making insert(), search(), and destroyTree() iterative eliminates the
+     *   call-stack dependency entirely. The three traversal methods (inOrder,
+     *   preOrder, postOrder) and deleteNode are only called on the 15-node year
+     *   BST, so they remain recursive without any risk.
      *
      * @tparam T  Element type.  Must support operator< and operator==.
      *
      * @author Deston
-     * @version 3.0
+     * @version 4.0
      * @date 24/03/2026
      */
 
@@ -28,22 +51,19 @@
 /**
  * @brief Internal node for Bst<T>.
  *
- * Holds one data value and owning pointers to left and right subtrees.
- * nullptr represents an absent child.
- *
  * @tparam T  Same element type as the containing Bst<T>.
  */
 template<typename T>
 struct BstNode
 {
-    T          data;    ///< Value stored at this node.
-    BstNode*   left;    ///< Pointer to left  child; nullptr if absent.
-    BstNode*   right;   ///< Pointer to right child; nullptr if absent.
+    T          data;   ///< Value stored at this node.
+    BstNode*   left;   ///< Left  child; nullptr if absent.
+    BstNode*   right;  ///< Right child; nullptr if absent.
 };
 
 
 // =========================================================================
-// Bst Generic Binary Search Tree
+// Bst — Generic Binary Search Tree
 // =========================================================================
 
 template<typename T>
@@ -55,50 +75,58 @@ public:
      * @brief Function pointer type for traversal callbacks.
      *
      * Signature: void callback(T& data)
-     * The parameter is T& so the callback may read or print the value.
-     * The caller must NOT modify data in a way that breaks the BST ordering
-     * invariant as this is non-const; enforcing this is the caller's responsibility.
+     * The parameter is T& (non-const) so the callback may read or print
+     * the value.  The caller must NOT modify data in a way that breaks
+     * BST ordering; enforcing this is the caller's responsibility.
      */
     typedef void (*f1Typ)(T&);
 
     /** @brief Default constructor.  Produces an empty tree. */
     Bst();
 
-    /** @brief Destructor.  Frees every node via recursive post-order traversal. */
+    /** @brief Destructor.  Frees every node iteratively (safe for large trees). */
     ~Bst();
 
     /**
      * @brief Copy constructor.  Deep-copies other.
-     * @param other  Source tree to copy from.
+     * @param other  Source tree.
      */
     Bst(const Bst& other);
 
     /**
      * @brief Copy-assignment operator.  Self-assignment safe.
-     * @param other  Source tree to copy from.
+     * @param other  Source tree.
      * @return       Reference to *this.
      */
     Bst& operator=(const Bst& other);
 
     /**
-     * @brief Insert value into the tree.
+     * @brief Insert value into the tree (ITERATIVE).
+     *
+     * Walks the tree with a pointer loop rather than recursion.
+     * Safe for right-skewed trees of 500,000+ nodes.
+     *
      * @param  value  Element to insert.
      * @return true   if inserted; false if value already existed (duplicate).
      */
     bool insert(const T& value);
 
     /**
-     * @brief Remove the node containing value.
+     * @brief Remove the node containing value (RECURSIVE).
      *
-     * Handles leaf, one-child, and two-children cases.
-     * Prints a diagnostic message to std::cout if value is not found.
+     * Only called on the small year BST (~15 nodes). Recursion depth
+     * is never a concern there.
      *
      * @param value  Element to remove.
      */
     void deleteNode(const T& value);
 
     /**
-     * @brief Search for value.
+     * @brief Search for value (ITERATIVE).
+     *
+     * Walks the tree with a pointer loop. Safe for right-skewed
+     * trees of 500,000+ nodes.
+     *
      * @param  value  Element to locate.
      * @return true if found, false otherwise.
      */
@@ -109,61 +137,58 @@ public:
 
     /**
      * @brief Returns the number of nodes in the tree.
-     * @note O(n) visits every node.
+     * @note O(n) recursive count.
      */
     int size() const;
 
     /**
      * @brief In-order traversal (left, root, right); invokes f1 at each node.
-     *
-     * The callback controls all output or collection behaviour; this method
-     * is responsible only for traversal order.
-     *
-     * @param f1  Callback invoked with a non-const reference to each node's data.
+     * @param f1  Callback for each node's data.
      */
     void inOrderTraversal(f1Typ f1) const;
 
     /**
      * @brief Pre-order traversal (root, left, right); invokes f1 at each node.
-     * @param f1  Callback invoked with a non-const reference to each node's data.
+     * @param f1  Callback for each node's data.
      */
     void preOrderTraversal(f1Typ f1) const;
 
     /**
      * @brief Post-order traversal (left, right, root); invokes f1 at each node.
-     * @param f1  Callback invoked with a non-const reference to each node's data.
+     * @param f1  Callback for each node's data.
      */
     void postOrderTraversal(f1Typ f1) const;
 
 private:
 
-    BstNode<T>* root;   ///< Pointer to root node; nullptr when the tree is empty.
+    BstNode<T>* root;  ///< Root node; nullptr when empty.
 
+    /**
+     * @brief Free every node iteratively using an explicit stack array.
+     *
+     * Allocates a fixed-size pointer array on the heap to simulate a
+     * stack.  The array capacity starts at 64 and doubles on overflow,
+     * so even a 500,000-node right-skewed tree is freed without touching
+     * the call stack.
+     *
+     * @param node  Root of the subtree to destroy.
+     */
     void        destroyTree    (BstNode<T>* node);
+
     BstNode<T>* copyTree       (BstNode<T>* node) const;
-    BstNode<T>* insertHelper   (BstNode<T>* node, const T& value, bool& added);
     BstNode<T>* deleteHelper   (BstNode<T>* node, const T& value, bool& removed);
-    bool        searchHelper   (BstNode<T>* node, const T& value) const;
-
-    /** @brief Recursive in-order helper; invokes f1 at each visited node. */
     void        inOrderHelper  (f1Typ f1, BstNode<T>* node) const;
-
-    /** @brief Recursive pre-order helper; invokes f1 at each visited node. */
     void        preOrderHelper (f1Typ f1, BstNode<T>* node) const;
-
-    /** @brief Recursive post-order helper; invokes f1 at each visited node. */
     void        postOrderHelper(f1Typ f1, BstNode<T>* node) const;
-
     int         sizeHelper     (BstNode<T>* node) const;
 };
 
 
 // =========================================================================
 // IMPLEMENTATION
-// Order matches the declaration order above exactly.
 // =========================================================================
 
-// ---- Constructors / Destructor / Assignment ----
+// ---- Constructor / Destructor / Assignment ----
 
 template<typename T>
 Bst<T>::Bst() : root(nullptr)
@@ -196,12 +221,54 @@ Bst<T>& Bst<T>::operator=(const Bst& other)
 
 // ---- Public interface ----
 
+/**
+ * Iterative insert.
+ * Walks left/right with a plain pointer loop until it finds an empty slot.
+ * No recursive frames — depth-independent.
+ */
 template<typename T>
 bool Bst<T>::insert(const T& value)
 {
-    bool added = false;
-    root = insertHelper(root, value, added);
-    return added;
+    // Allocate new node before walking so we only allocate once
+    BstNode<T>* newNode = new BstNode<T>;
+    newNode->data  = value;
+    newNode->left  = nullptr;
+    newNode->right = nullptr;
+
+    if (root == nullptr)
+    {
+        root = newNode;
+        return true;
+    }
+
+    BstNode<T>* curr = root;
+    while (true)
+    {
+        if (value < curr->data)
+        {
+            if (curr->left == nullptr)
+            {
+                curr->left = newNode;
+                return true;
+            }
+            curr = curr->left;
+        }
+        else if (curr->data < value)
+        {
+            if (curr->right == nullptr)
+            {
+                curr->right = newNode;
+                return true;
+            }
+            curr = curr->right;
+        }
+        else
+        {
+            // Duplicate — silently rejected
+            delete newNode;
+            return false;
+        }
+    }
 }
 
 template<typename T>
@@ -213,51 +280,104 @@ void Bst<T>::deleteNode(const T& value)
         std::cout << "deleteNode: value not found in tree." << std::endl;
 }
 
+/**
+ * Iterative search.
+ * Walks left/right with a plain pointer loop.
+ * No recursive frames — depth-independent.
+ */
 template<typename T>
 bool Bst<T>::search(const T& value) const
 {
-    return searchHelper(root, value);
+    BstNode<T>* curr = root;
+    while (curr != nullptr)
+    {
+        if (value == curr->data) return true;
+        if (value <  curr->data) curr = curr->left;
+        else                     curr = curr->right;
+    }
+    return false;
 }
 
 template<typename T>
-bool Bst<T>::isEmpty() const
-{
-    return root == nullptr;
-}
+bool Bst<T>::isEmpty() const { return root == nullptr; }
 
 template<typename T>
-int Bst<T>::size() const
-{
-    return sizeHelper(root);
-}
+int Bst<T>::size() const { return sizeHelper(root); }
 
 template<typename T>
-void Bst<T>::inOrderTraversal(f1Typ f1) const
-{
-    inOrderHelper(f1, root);
-}
+void Bst<T>::inOrderTraversal(f1Typ f1) const { inOrderHelper(f1, root); }
 
 template<typename T>
-void Bst<T>::preOrderTraversal(f1Typ f1) const
-{
-    preOrderHelper(f1, root);
-}
+void Bst<T>::preOrderTraversal(f1Typ f1) const { preOrderHelper(f1, root); }
 
 template<typename T>
-void Bst<T>::postOrderTraversal(f1Typ f1) const
-{
-    postOrderHelper(f1, root);
-}
+void Bst<T>::postOrderTraversal(f1Typ f1) const { postOrderHelper(f1, root); }
 
 // ---- Private helpers ----
 
+/**
+ * Iterative destroyTree using a heap-allocated pointer stack.
+ *
+ * Performs a pre-order walk: push root, then loop:
+ *   pop node -> push right child -> push left child -> delete node.
+ *
+ * The stack is a plain heap array (new/delete[]) that doubles in capacity
+ * when full.  Starting at 64 slots it reaches 524,288 slots after 13
+ * doublings — enough to hold the entire 509,000-node timestamp tree in
+ * memory at once.  No call-stack frames are used.
+ */
 template<typename T>
 void Bst<T>::destroyTree(BstNode<T>* node)
 {
     if (node == nullptr) return;
-    destroyTree(node->left);
-    destroyTree(node->right);
-    delete node;
+
+    // Initial stack capacity; will double as needed
+    int capacity = 64;
+    int top      = 0;
+    BstNode<T>** stk = new BstNode<T>*[capacity];
+
+    stk[top++] = node;
+
+    while (top > 0)
+    {
+        BstNode<T>* curr = stk[--top];
+
+        // Push children before deleting current node
+        if (curr->right != nullptr)
+        {
+            if (top == capacity)
+            {
+                // Double the stack capacity
+                int newCap = capacity * 2;
+                BstNode<T>** bigger = new BstNode<T>*[newCap];
+                for (int i = 0; i < top; i++)
+                    bigger[i] = stk[i];
+                delete[] stk;
+                stk      = bigger;
+                capacity = newCap;
+            }
+            stk[top++] = curr->right;
+        }
+
+        if (curr->left != nullptr)
+        {
+            if (top == capacity)
+            {
+                int newCap = capacity * 2;
+                BstNode<T>** bigger = new BstNode<T>*[newCap];
+                for (int i = 0; i < top; i++)
+                    bigger[i] = stk[i];
+                delete[] stk;
+                stk      = bigger;
+                capacity = newCap;
+            }
+            stk[top++] = curr->left;
+        }
+
+        delete curr;
+    }
+
+    delete[] stk;
 }
 
 template<typename T>
@@ -272,24 +392,6 @@ BstNode<T>* Bst<T>::copyTree(BstNode<T>* node) const
 }
 
 template<typename T>
-BstNode<T>* Bst<T>::insertHelper(BstNode<T>* node, const T& value, bool& added)
-{
-    if (node == nullptr)
-    {
-        added = true;
-        BstNode<T>* n = new BstNode<T>;
-        n->data  = value;
-        n->left  = nullptr;
-        n->right = nullptr;
-        return n;
-    }
-    if      (value < node->data) node->left  = insertHelper(node->left,  value, added);
-    else if (node->data < value) node->right = insertHelper(node->right, value, added);
-    // equal: duplicate � added stays false, tree unchanged
-    return node;
-}
-
-template<typename T>
 BstNode<T>* Bst<T>::deleteHelper(BstNode<T>* node, const T& value, bool& removed)
 {
     if (node == nullptr) return nullptr;
@@ -300,7 +402,6 @@ BstNode<T>* Bst<T>::deleteHelper(BstNode<T>* node, const T& value, bool& removed
     {
         removed = true;
 
-        // Case 1 & 2: zero or one child
         if (node->left == nullptr)
         {
             BstNode<T>* r = node->right;
@@ -314,7 +415,7 @@ BstNode<T>* Bst<T>::deleteHelper(BstNode<T>* node, const T& value, bool& removed
             return l;
         }
 
-        // Case 3: two children � replace with in-order successor (smallest in right subtree)
+        // Two children: replace with in-order successor
         BstNode<T>* succ = node->right;
         while (succ->left != nullptr)
             succ = succ->left;
@@ -325,17 +426,8 @@ BstNode<T>* Bst<T>::deleteHelper(BstNode<T>* node, const T& value, bool& removed
     return node;
 }
 
-template<typename T>
-bool Bst<T>::searchHelper(BstNode<T>* node, const T& value) const
-{
-    if (node == nullptr)     return false;
-    if (value == node->data) return true;
-    if (value <  node->data) return searchHelper(node->left,  value);
-    return                          searchHelper(node->right, value);
-}
-
-// In a const method, root is BstNode<T>* const (const pointer to non-const node),
-// so node->data is T (non-const) and f1(node->data) compiles correctly.
+// In a const method, root is BstNode<T>* const so node->data is T (non-const)
+// and f1(node->data) compiles correctly with f1Typ = void(*)(T&).
 template<typename T>
 void Bst<T>::inOrderHelper(f1Typ f1, BstNode<T>* node) const
 {
