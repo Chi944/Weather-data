@@ -15,25 +15,6 @@
      * controls what happens at each visited node, enabling decoupled,
      * reusable callback behaviour.
      *
-     * ITERATIVE vs RECURSIVE design decision
-     * ----------------------------------------
-     * Three methods are ITERATIVE: insert(), search(), destroyTree().
-     * All other methods remain RECURSIVE.
-     *
-     * Reason: this BST is instantiated in two places:
-     *
-     *   1. Bst<int> in WeatherDataStore  — stores ~15 unique calendar years.
-     *      A 15-node tree has a maximum recursion depth of 15. Recursive is
-     *      completely safe and simpler to read.
-     *
-     *   2. Bst<long long> in DataFileManager — stores up to ~509,000 unique
-     *      timestamp keys (one per weather record). The CSV source files are
-     *      sorted in ascending timestamp order, so each new key is larger
-     *      than all previous ones. Every insert therefore takes the right
-     *      branch, producing a completely right-skewed tree whose depth equals
-     *      the number of nodes. Calling insertHelper, searchHelper, or
-     *      destroyTree recursively on a 509,000-deep tree exhausts the Windows
-     *      default ~1 MB call stack and causes STATUS_STACK_OVERFLOW (0xC00000FD).
      *
      *   Making insert(), search(), and destroyTree() iterative eliminates the
      *   call-stack dependency entirely. The three traversal methods (inOrder,

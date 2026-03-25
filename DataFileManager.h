@@ -18,8 +18,7 @@
      *
      * Duplicate detection uses a Bst<long long> keyed on a compact integer
      * encoding of each record's date and time.  Bst<long long> provides
-     * O(log n) search and insert, satisfies the assignment's requirement to
-     * use no unwrapped STL containers, and gives an additional concrete use
+     * O(log n) search and insert, and gives an additional concrete use
      * of the BST data structure beyond the year index in WeatherDataStore.
      *
      * Per-file result strings are stored internally and retrieved via
@@ -97,9 +96,8 @@ private:
      * key (see MakeTimestampKey). The BST rejects duplicate key insertions
      * automatically, making search() a clean O(log n) existence check.
      *
-     * Using Bst<long long> here satisfies the assignment requirement that
-     * no unwrapped STL containers appear in application code, while also
-     * providing a second concrete use of the BST beyond the year index.
+     * Using Bst<long long> here provides a second concrete use of the BST
+     * beyond the year index.
      */
     Bst<long long> m_timestampBst;
 

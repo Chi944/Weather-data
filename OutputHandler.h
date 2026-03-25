@@ -116,11 +116,6 @@ public:
     /**
      * @brief Write "No Data" to the CSV file when an entire year has no records.
      *
-     * Per A2 spec: "If the entire year's data is not available, output just the
-     * year on the first line and the message 'No Data' on the second line."
-     * The year header is already written by WriteCSVHeader; this method writes
-     * the second line.
-     *
      * @param file Open output stream.
      */
     void WriteCSVNoData(std::ofstream& file) const;

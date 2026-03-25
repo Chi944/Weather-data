@@ -9,7 +9,7 @@
 
     /**
      * @file WeatherDataStore.h
-     * @brief Indexed weather data store — the primary data structure for Assignment 2.
+     * @brief Indexed weather data store
      *
      * @details
      * Uses two complementary data structures whose properties suit the
@@ -21,8 +21,6 @@
      *     struct holding three parallel float vectors (wind, temperature,
      *     solar).  O(n) lookup is acceptable because there are at most
      *     ~10 outer entries (years) and 12 inner entries (months).
-     *     Using our own Map class means std::map is never used in
-     *     application code — satisfying the bonus requirement.
      *
      *   Bst<int>
      *     Stores unique calendar years in a BST.  Provides O(log n) year
@@ -123,8 +121,7 @@ public:
      *
      * Passes the caller-supplied function pointer directly to
      * Bst<int>::inOrderTraversal, which visits each year in ascending order
-     * and invokes the callback.  This is the function-pointer usage required
-     * by Assignment 2.
+     * and invokes the callback
      *
      * @param visit  Callback matching Bst<int>::f1Typ: void (*)(int&).
      */
@@ -157,10 +154,6 @@ private:
      * Outer Map key: calendar year (int).
      * Inner Map key: month number 1-12 (int).
      * Value: MonthlyData struct with three parallel float Vectors.
-     *
-     * std::map is deliberately NOT used here; our own Map class is used
-     * instead to satisfy the bonus requirement and eliminate std::map
-     * from all application code.
      */
     Map<int, Map<int, MonthlyData> > m_data;
 

@@ -13,9 +13,6 @@
      * Reads and validates input, invokes Calculator for computation,
      * and delegates all formatted output to OutputHandler.
      *
-     * WeatherDataStore replaces the flat Vector<WeatherRecord> + YearTracker
-     * used in Assignment 1, enabling O(log n) data access via the internal map.
-     *
      * DisplayAvailableYears calls store.TraverseYears(PrintYear), passing the
      * static function pointer PrintYear into the BST in-order traversal.
      * PrintYear's signature matches Bst<int>::f1Typ exactly: void (*)(int&).

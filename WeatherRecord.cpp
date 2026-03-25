@@ -65,11 +65,3 @@ bool WeatherRecord::MatchesMonthYear(int month, int year) const
     return m_date.GetMonth() == month && m_date.GetYear() == year;
 }
 
-bool WeatherRecord::HasSameTimestamp(const WeatherRecord& other) const
-{
-    return m_date.GetDay()    == other.m_date.GetDay()    &&
-           m_date.GetMonth()  == other.m_date.GetMonth()  &&
-           m_date.GetYear()   == other.m_date.GetYear()   &&
-           m_time.GetHour()   == other.m_time.GetHour()   &&
-           m_time.GetMinute() == other.m_time.GetMinute();
-}

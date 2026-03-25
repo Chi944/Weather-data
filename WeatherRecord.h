@@ -15,8 +15,8 @@
      * would otherwise require callers to chain through Date and Time,
      *
      * @author Deston
-     * @version 1.0
-     * @date 18/02/2026
+     * @version 2.0
+     * @date 23/03/2026
      */
 
 class WeatherRecord
@@ -70,13 +70,6 @@ public:
      * @return true if the record's date matches both month and year
      */
     bool MatchesMonthYear(int month, int year) const;
-
-    /**
-     * @brief Check whether this record has the same date and time as another
-     * @param other The record to compare against
-     * @return true if both records share the same date and time stamp
-     */
-    bool HasSameTimestamp(const WeatherRecord& other) const;
 
 private:
     Date  m_date;           /**< Date of reading */
