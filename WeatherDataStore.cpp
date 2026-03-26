@@ -2,7 +2,7 @@
 
 WeatherDataStore::WeatherDataStore()
 {
-    // Map<> and Bst<int> default-construct to empty
+    // Map<> and Bst<int> default-construct to empty — nothing else needed
 }
 
 float WeatherDataStore::ToKmh(float mps)
@@ -18,8 +18,8 @@ void WeatherDataStore::Build(const Vector<WeatherRecord>& records)
         int year  = r.GetDate().GetYear();
         int month = r.GetDate().GetMonth();
 
-        // Map::operator[] creates the inner Map and MonthlyData if absent,
-        // then returns a reference — no explicit existence check needed.
+        // operator[] creates the inner Map and MonthlyData if absent,
+        // then returns a reference
         MonthlyData& md = m_data[year][month];
         md.windSpeeds.Append(ToKmh(r.GetWindSpeed()));
         md.temperatures.Append(r.GetTemperature());
@@ -32,11 +32,12 @@ void WeatherDataStore::Build(const Vector<WeatherRecord>& records)
 
 bool WeatherDataStore::HasData(int year, int month) const
 {
-    // getPtr returns nullptr if the year key is absent
+    // getPtr returns nullptr if the year key is absent.
+    // getPtr(month) != nullptr
     const Map<int, MonthlyData>* yearMap = m_data.getPtr(year);
     if (yearMap == nullptr) return false;
 
-    return yearMap->contains(month);
+    return yearMap->getPtr(month) != nullptr;
 }
 
 const MonthlyData* WeatherDataStore::GetMonthData(int year, int month) const
@@ -55,9 +56,10 @@ void WeatherDataStore::GetMonthDataAllYears(int month,
     // Index-based iteration over the outer Map (all years)
     for (int i = 0; i < m_data.size(); i++)
     {
-        const Map<int, MonthlyData>& monthMap = m_data.getValue(i);
-        const MonthlyData* md = monthMap.getPtr(month);
+        const Map<int, MonthlyData>* monthMapPtr = m_data.getPtr(m_data.getKey(i));
+        if (monthMapPtr == nullptr) continue;
 
+        const MonthlyData* md = monthMapPtr->getPtr(month);
         if (md == nullptr) continue;   // this year has no data for 'month'
 
         for (int j = 0; j < md->windSpeeds.Size(); j++)
@@ -71,8 +73,6 @@ void WeatherDataStore::GetMonthDataAllYears(int month,
 
 void WeatherDataStore::TraverseYears(void (*visit)(int&)) const
 {
-    // Delegates to Bst<int>::inOrderTraversal — function-pointer usage
-    // required by Assignment 2
     m_yearBst.inOrderTraversal(visit);
 }
 

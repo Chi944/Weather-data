@@ -132,13 +132,13 @@ private:
 
 
 // ---------------------------------------------------------------------------
-// Implementation (header-only because Map is a template)
+// Implementation
 // ---------------------------------------------------------------------------
 
 template<typename K, typename V>
 Map<K, V>::Map()
 {
-    // Vector default-constructs to empty — nothing extra needed
+    // Vector default-constructs to empty
 }
 
 template<typename K, typename V>
