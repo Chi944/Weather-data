@@ -96,12 +96,12 @@ Inheritance diagram for Vector&lt; T &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="classVector__inherit__graph.png" border="0" usemap="#Vector_3_01T_01_4_inherit__map" alt="Inheritance graph"/></div>
 <map name="Vector_3_01T_01_4_inherit__map" id="Vector_3_01T_01_4_inherit__map">
-<area shape="rect" title=" " alt="" coords="357,5,460,259"/>
-<area shape="rect" href="classVector.html" title=" " alt="" coords="5,321,180,589"/>
-<area shape="rect" href="classVector.html" title=" " alt="" coords="223,329,333,582"/>
-<area shape="rect" href="classVector.html" title=" " alt="" coords="357,329,460,582"/>
-<area shape="rect" href="classVector.html" title=" " alt="" coords="484,329,587,582"/>
-<area shape="rect" href="classVector.html" title=" " alt="" coords="611,329,713,582"/>
+<area shape="rect" title=" " alt="" coords="357,5,460,244"/>
+<area shape="rect" href="classVector.html" title=" " alt="" coords="5,307,180,560"/>
+<area shape="rect" href="classVector.html" title=" " alt="" coords="223,314,333,553"/>
+<area shape="rect" href="classVector.html" title=" " alt="" coords="357,314,460,553"/>
+<area shape="rect" href="classVector.html" title=" " alt="" coords="484,314,587,553"/>
+<area shape="rect" href="classVector.html" title=" " alt="" coords="611,314,713,553"/>
 </map>
 </div>
 <div class="dynheader">
@@ -109,7 +109,7 @@ Collaboration diagram for Vector&lt; T &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="classVector__coll__graph.png" border="0" usemap="#Vector_3_01T_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="Vector_3_01T_01_4_coll__map" id="Vector_3_01T_01_4_coll__map">
-<area shape="rect" title=" " alt="" coords="5,285,108,539"/>
+<area shape="rect" title=" " alt="" coords="5,285,108,524"/>
 <area shape="rect" title=" " alt="" coords="11,145,102,223"/>
 <area shape="rect" title=" " alt="" coords="28,5,85,83"/>
 </map>
@@ -123,9 +123,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acf7619af10ed5201835f5e8b4981c13a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector.html#acf7619af10ed5201835f5e8b4981c13a">Vector</a> (int n)</td></tr>
 <tr class="memdesc:acf7619af10ed5201835f5e8b4981c13a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameterised constructor with initial capacity hint.  <a href="classVector.html#acf7619af10ed5201835f5e8b4981c13a">More...</a><br /></td></tr>
 <tr class="separator:acf7619af10ed5201835f5e8b4981c13a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd524fac19e6d3d69db5198ffe2952b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector.html#afd524fac19e6d3d69db5198ffe2952b0">~Vector</a> ()</td></tr>
-<tr class="memdesc:afd524fac19e6d3d69db5198ffe2952b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="classVector.html#afd524fac19e6d3d69db5198ffe2952b0">More...</a><br /></td></tr>
-<tr class="separator:afd524fac19e6d3d69db5198ffe2952b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c38e640cd0ea019aaf7c94f58fbf453"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector.html#a6c38e640cd0ea019aaf7c94f58fbf453">Insert</a> (int index, const T &amp;data)</td></tr>
 <tr class="memdesc:a6c38e640cd0ea019aaf7c94f58fbf453"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert element at the specified index.  <a href="classVector.html#a6c38e640cd0ea019aaf7c94f58fbf453">More...</a><br /></td></tr>
 <tr class="separator:a6c38e640cd0ea019aaf7c94f58fbf453"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -236,39 +233,7 @@ template&lt;class T &gt; </div>
 </dl>
 <p>Allows callers to specify expected usage, reducing the number of reallocation events. Size is 0 after construction regardless of n. </p>
 
-<p class="definition">Definition at line <a class="el" href="Vector_8h_source.html#l00147">147</a> of file <a class="el" href="Vector_8h_source.html">Vector.h</a>.</p>
-
-</div>
-</div>
-<a id="afd524fac19e6d3d69db5198ffe2952b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd524fac19e6d3d69db5198ffe2952b0">&#9670;&nbsp;</a></span>~Vector()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classVector.html">Vector</a>&lt; T &gt;::~<a class="el" href="classVector.html">Vector</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Destructor. </p>
-<p>std::vector releases its heap allocation automatically; no manual resource management is required here. </p>
-
-<p class="definition">Definition at line <a class="el" href="Vector_8h_source.html#l00055">55</a> of file <a class="el" href="Vector_8h_source.html">Vector.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Vector_8h_source.html#l00139">139</a> of file <a class="el" href="Vector_8h_source.html">Vector.h</a>.</p>
 
 </div>
 </div>
@@ -301,7 +266,7 @@ template&lt;class T &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>true always (capacity is grown automatically if needed)</dd></dl>
 <p>Convenience method equivalent to Insert(Size(), data). </p>
 
-<p class="definition">Definition at line <a class="el" href="Vector_8h_source.html#l00222">222</a> of file <a class="el" href="Vector_8h_source.html">Vector.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Vector_8h_source.html#l00214">214</a> of file <a class="el" href="Vector_8h_source.html">Vector.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="WeatherDataStore_8cpp_source.html#l00013">WeatherDataStore::Build()</a>, <a class="el" href="MenuHandlerTest_8cpp_source.html#l00053">buildStoreWithYears()</a>, <a class="el" href="Calculator_8cpp_source.html#l00060">Calculator::CalculateCorrelations()</a>, <a class="el" href="BstTest_8cpp_source.html#l00077">collect()</a>, <a class="el" href="WeatherDataStoreTest_8cpp_source.html#l00049">collectYear()</a>, <a class="el" href="WeatherDataStore_8cpp_source.html#l00051">WeatherDataStore::GetMonthDataAllYears()</a>, <a class="el" href="DataFileManager_8cpp_source.html#l00045">DataFileManager::LoadDataFiles()</a>, <a class="el" href="DataLoader_8cpp_source.html#l00012">DataLoader::LoadFromFile()</a>, <a class="el" href="DataFileManager_8cpp_source.html#l00013">DataFileManager::ReadDataSourceFile()</a>, <a class="el" href="ApplicationTest_8cpp_source.html#l00084">test1()</a>, <a class="el" href="StatsTest_8cpp_source.html#l00146">test10()</a>, <a class="el" href="StatsTest_8cpp_source.html#l00155">test11()</a>, <a class="el" href="ApplicationTest_8cpp_source.html#l00330">test12()</a>, <a class="el" href="ApplicationTest_8cpp_source.html#l00353">test13()</a>, <a class="el" href="ApplicationTest_8cpp_source.html#l00369">test14()</a>, <a class="el" href="ApplicationTest_8cpp_source.html#l00385">test15()</a>, <a class="el" href="ApplicationTest_8cpp_source.html#l00452">test18()</a>, <a class="el" href="ApplicationTest_8cpp_source.html#l00478">test19()</a>, <a class="el" href="ApplicationTest_8cpp_source.html#l00120">test2()</a>, <a class="el" href="ApplicationTest_8cpp_source.html#l00502">test20()</a>, <a class="el" href="ApplicationTest_8cpp_source.html#l00558">test23()</a>, <a class="el" href="ApplicationTest_8cpp_source.html#l00581">test24()</a>, <a class="el" href="ApplicationTest_8cpp_source.html#l00140">test3()</a>, <a class="el" href="ApplicationTest_8cpp_source.html#l00157">test4()</a>, <a class="el" href="ApplicationTest_8cpp_source.html#l00178">test5()</a>, <a class="el" href="ApplicationTest_8cpp_source.html#l00199">test6()</a>, <a class="el" href="ApplicationTest_8cpp_source.html#l00222">test7()</a>, <a class="el" href="StatsTest_8cpp_source.html#l00123">test8()</a>, and <a class="el" href="ApplicationTest_8cpp_source.html#l00257">test9()</a>.</p>
 <div class="dynheader">
@@ -381,7 +346,7 @@ template&lt;class T &gt; </div>
 <p>Get the current allocated capacity. </p>
 <dl class="section return"><dt>Returns</dt><dd>Number of elements the <a class="el" href="classVector.html">Vector</a> can hold before reallocation </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Vector_8h_source.html#l00210">210</a> of file <a class="el" href="Vector_8h_source.html">Vector.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Vector_8h_source.html#l00202">202</a> of file <a class="el" href="Vector_8h_source.html">Vector.h</a>.</p>
 
 </div>
 </div>
@@ -402,7 +367,7 @@ template&lt;class T &gt; </div>
 <p>Remove all elements from the <a class="el" href="classVector.html">Vector</a>. </p>
 <p>Sets <a class="el" href="classVector.html#a40effefcf63fe290e881dcca17c7c178" title="Get the current number of stored elements.">Size()</a> to 0. The allocated capacity is preserved so that subsequent appends do not immediately trigger reallocation. </p>
 
-<p class="definition">Definition at line <a class="el" href="Vector_8h_source.html#l00216">216</a> of file <a class="el" href="Vector_8h_source.html">Vector.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Vector_8h_source.html#l00208">208</a> of file <a class="el" href="Vector_8h_source.html">Vector.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="BstTest_8cpp_source.html#l00228">test11()</a>, <a class="el" href="BstTest_8cpp_source.html#l00253">test12()</a>, <a class="el" href="BstTest_8cpp_source.html#l00322">test16()</a>, <a class="el" href="BstTest_8cpp_source.html#l00344">test17()</a>, <a class="el" href="BstTest_8cpp_source.html#l00376">test18()</a>, <a class="el" href="BstTest_8cpp_source.html#l00137">test6()</a>, <a class="el" href="BstTest_8cpp_source.html#l00155">test7()</a>, <a class="el" href="BstTest_8cpp_source.html#l00170">test8()</a>, and <a class="el" href="BstTest_8cpp_source.html#l00193">test9()</a>.</p>
 <div class="dynheader">
@@ -454,7 +419,7 @@ template&lt;class T &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>true if deletion succeeded, false if index is out of range</dd></dl>
 <p>Removes the element at <code>index</code> and shifts all subsequent elements one position to the left. </p>
 
-<p class="definition">Definition at line <a class="el" href="Vector_8h_source.html#l00175">175</a> of file <a class="el" href="Vector_8h_source.html">Vector.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Vector_8h_source.html#l00167">167</a> of file <a class="el" href="Vector_8h_source.html">Vector.h</a>.</p>
 
 </div>
 </div>
@@ -475,7 +440,7 @@ template&lt;class T &gt; </div>
 <p>Check whether the <a class="el" href="classVector.html">Vector</a> contains no elements. </p>
 <dl class="section return"><dt>Returns</dt><dd>true if <a class="el" href="classVector.html#a40effefcf63fe290e881dcca17c7c178" title="Get the current number of stored elements.">Size()</a> == 0, false otherwise </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Vector_8h_source.html#l00198">198</a> of file <a class="el" href="Vector_8h_source.html">Vector.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Vector_8h_source.html#l00190">190</a> of file <a class="el" href="Vector_8h_source.html">Vector.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="Calculator_8cpp_source.html#l00026">Calculator::CalculateTempStats()</a>, and <a class="el" href="Calculator_8cpp_source.html#l00013">Calculator::CalculateWindStats()</a>.</p>
 <div class="dynheader">
@@ -547,7 +512,7 @@ template&lt;class T &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>true if the insertion succeeded, false if index is out of range</dd></dl>
 <p>Elements at and after <code>index</code> are shifted right by one position. Resizing is automatic; callers do not need to request it. </p>
 
-<p class="definition">Definition at line <a class="el" href="Vector_8h_source.html#l00157">157</a> of file <a class="el" href="Vector_8h_source.html">Vector.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Vector_8h_source.html#l00149">149</a> of file <a class="el" href="Vector_8h_source.html">Vector.h</a>.</p>
 
 </div>
 </div>
@@ -579,7 +544,7 @@ template&lt;class T &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>Reference to the element at <code>index</code> </dd></dl>
 <p>No bounds checking is performed; the caller must supply a valid index. </p>
 
-<p class="definition">Definition at line <a class="el" href="Vector_8h_source.html#l00192">192</a> of file <a class="el" href="Vector_8h_source.html">Vector.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Vector_8h_source.html#l00184">184</a> of file <a class="el" href="Vector_8h_source.html">Vector.h</a>.</p>
 
 </div>
 </div>
@@ -611,7 +576,7 @@ template&lt;class T &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>Const reference to the element at <code>index</code> </dd></dl>
 <p>No bounds checking is performed; the caller must supply a valid index. </p>
 
-<p class="definition">Definition at line <a class="el" href="Vector_8h_source.html#l00186">186</a> of file <a class="el" href="Vector_8h_source.html">Vector.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Vector_8h_source.html#l00178">178</a> of file <a class="el" href="Vector_8h_source.html">Vector.h</a>.</p>
 
 </div>
 </div>
@@ -642,7 +607,7 @@ template&lt;class T &gt; </div>
 </dl>
 <p>Avoids repeated reallocation when loading large datasets. Has no effect if n &lt;= <a class="el" href="classVector.html#a277dba30cec873c9675fda8bbb3219d6" title="Get the current allocated capacity.">Capacity()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="Vector_8h_source.html#l00229">229</a> of file <a class="el" href="Vector_8h_source.html">Vector.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Vector_8h_source.html#l00221">221</a> of file <a class="el" href="Vector_8h_source.html">Vector.h</a>.</p>
 
 </div>
 </div>
@@ -663,7 +628,7 @@ template&lt;class T &gt; </div>
 <p>Get the current number of stored elements. </p>
 <dl class="section return"><dt>Returns</dt><dd>Number of elements currently in the <a class="el" href="classVector.html">Vector</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Vector_8h_source.html#l00204">204</a> of file <a class="el" href="Vector_8h_source.html">Vector.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Vector_8h_source.html#l00196">196</a> of file <a class="el" href="Vector_8h_source.html">Vector.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="WeatherDataStore_8cpp_source.html#l00013">WeatherDataStore::Build()</a>, <a class="el" href="Calculator_8cpp_source.html#l00060">Calculator::CalculateCorrelations()</a>, <a class="el" href="Stats_8cpp_source.html#l00025">CalculateMAD()</a>, <a class="el" href="Stats_8cpp_source.html#l00005">CalculateMean()</a>, <a class="el" href="Stats_8cpp_source.html#l00013">CalculateSampleStdDev()</a>, <a class="el" href="Calculator_8cpp_source.html#l00039">Calculator::CalculateSolarTotal()</a>, <a class="el" href="Stats_8cpp_source.html#l00034">CalculateSPCC()</a>, <a class="el" href="WeatherDataStore_8cpp_source.html#l00051">WeatherDataStore::GetMonthDataAllYears()</a>, <a class="el" href="DataFileManager_8cpp_source.html#l00045">DataFileManager::LoadDataFiles()</a>, <a class="el" href="Main_8cpp_source.html#l00027">main()</a>, <a class="el" href="BstTest_8cpp_source.html#l00228">test11()</a>, <a class="el" href="BstTest_8cpp_source.html#l00253">test12()</a>, <a class="el" href="ApplicationTest_8cpp_source.html#l00405">test16()</a>, <a class="el" href="ApplicationTest_8cpp_source.html#l00428">test17()</a>, <a class="el" href="BstTest_8cpp_source.html#l00376">test18()</a>, <a class="el" href="ApplicationTest_8cpp_source.html#l00543">test22()</a>, <a class="el" href="WeatherDataStoreTest_8cpp_source.html#l00092">test5()</a>, <a class="el" href="BstTest_8cpp_source.html#l00137">test6()</a>, <a class="el" href="BstTest_8cpp_source.html#l00155">test7()</a>, <a class="el" href="BstTest_8cpp_source.html#l00170">test8()</a>, and <a class="el" href="BstTest_8cpp_source.html#l00193">test9()</a>.</p>
 <div class="dynheader">
@@ -749,7 +714,7 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Vector_8h_source.html#l00141">141</a> of file <a class="el" href="Vector_8h_source.html">Vector.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Vector_8h_source.html#l00133">133</a> of file <a class="el" href="Vector_8h_source.html">Vector.h</a>.</p>
 
 </div>
 </div>

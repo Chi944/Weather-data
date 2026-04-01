@@ -3,6 +3,6 @@
 <area shape="rect" id="node2" href="$classVector.html#a87ade8112b3c0c67ffe3bde64d0a1a78" title="Append an element to the end of the Vector." alt="" coords="245,5,357,32"/>
 <area shape="rect" id="node3" href="$classMap.html#a62855ad7dd190c7679e9763e9f0a7015" title="Read the key at a given index (for index&#45;based iteration)." alt="" coords="254,56,349,83"/>
 <area shape="rect" id="node4" href="$classMap.html#a2be2a7c920956070df7c28e80c32060f" title="Non&#45;const pointer to the value for key, or nullptr if absent." alt="" coords="256,107,347,133"/>
-<area shape="rect" id="node5" href="$classMap.html#a2b81e60b8faaee80981fd4e5e7ec534c" title="Number of key&#45;value pairs currently stored." alt="" coords="262,157,341,184"/>
-<area shape="rect" id="node6" href="$classVector.html#a40effefcf63fe290e881dcca17c7c178" title="Get the current number of stored elements." alt="" coords="255,208,348,235"/>
+<area shape="rect" id="node5" href="$classVector.html#a40effefcf63fe290e881dcca17c7c178" title="Get the current number of stored elements." alt="" coords="255,157,348,184"/>
+<area shape="rect" id="node6" href="$classMap.html#a2b81e60b8faaee80981fd4e5e7ec534c" title="Number of key&#45;value pairs currently stored." alt="" coords="262,208,341,235"/>
 </map>

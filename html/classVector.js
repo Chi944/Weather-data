@@ -2,7 +2,6 @@ var classVector =
 [
     [ "Vector", "classVector.html#a39d6069675db4ecfc1ab81d440da759a", null ],
     [ "Vector", "classVector.html#acf7619af10ed5201835f5e8b4981c13a", null ],
-    [ "~Vector", "classVector.html#afd524fac19e6d3d69db5198ffe2952b0", null ],
     [ "Append", "classVector.html#a87ade8112b3c0c67ffe3bde64d0a1a78", null ],
     [ "Capacity", "classVector.html#a277dba30cec873c9675fda8bbb3219d6", null ],
     [ "Clear", "classVector.html#a06640b5a57e692928364c727def3c5de", null ],
