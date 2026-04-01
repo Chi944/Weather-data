@@ -1,0 +1,17 @@
+<map id="MenuHandler.h" name="MenuHandler.h">
+<area shape="rect" id="node1" title="Drives the main menu loop and coordinates user interaction." alt="" coords="336,5,444,32"/>
+<area shape="rect" id="node2" href="$WeatherDataStore_8h.html" title="Indexed weather data store." alt="" coords="175,155,314,181"/>
+<area shape="rect" id="node12" href="$Calculator_8h.html" title="Domain&#45;specific statistics on WeatherDataStore data." alt="" coords="282,80,373,107"/>
+<area shape="rect" id="node13" href="$OutputHandler_8h.html" title="Formats and writes all program output for the Weather Data Processor." alt="" coords="397,80,511,107"/>
+<area shape="rect" id="node15" title=" " alt="" coords="516,155,571,181"/>
+<area shape="rect" id="node3" href="$Map_8h.html" title="Minimal but complete generic Map (key&#45;&gt;value associative container)." alt="" coords="9,229,67,256"/>
+<area shape="rect" id="node4" href="$Vector_8h.html" title="Template Vector class a generic dynamic array with automatic resizing." alt="" coords="5,304,76,331"/>
+<area shape="rect" id="node6" href="$WeatherRecord_8h.html" title="WeatherRecord class — a single weather station reading." alt="" coords="142,229,265,256"/>
+<area shape="rect" id="node9" href="$Bst_8h.html" title="Generic Binary Search Tree with function&#45;pointer traversal callbacks." alt="" coords="289,229,339,256"/>
+<area shape="rect" id="node11" href="$Constants_8h.html" title="Global constants used throughout the Weather Data Processor." alt="" coords="364,229,453,256"/>
+<area shape="rect" id="node5" title=" " alt="" coords="12,379,69,405"/>
+<area shape="rect" id="node7" href="$Date_8h.html" title="Calendar Date class with validation and comparison operators." alt="" coords="105,304,163,331"/>
+<area shape="rect" id="node8" href="$Time_8h.html" title="Time class representing a time of day (hour and minute)" alt="" coords="188,304,251,331"/>
+<area shape="rect" id="node10" title=" " alt="" coords="278,304,350,331"/>
+<area shape="rect" id="node14" title=" " alt="" coords="421,155,487,181"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="MenuHandler::GetMonthInput" name="MenuHandler::GetMonthInput">
+<area shape="rect" id="node1" title="Prompt for and validate a month number (1&#45;12)." alt="" coords="5,5,196,32"/>
+<area shape="rect" id="node2" href="$classMenuHandler.html#a4307e485c7414b20b6abce31ae118006" title="Read and validate an integer from standard input." alt="" coords="244,5,415,32"/>
+<area shape="rect" id="node3" href="$classMenuHandler.html#a549091dd8823d90e80b8613b0e01b325" title="Discard remaining characters in the input buffer." alt="" coords="463,5,629,32"/>
+</map>

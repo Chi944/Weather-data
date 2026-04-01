@@ -1,0 +1,29 @@
+<map id="test7" name="test7">
+<area shape="rect" id="node1" title=" " alt="" coords="5,647,56,673"/>
+<area shape="rect" id="node2" href="$classVector.html#a87ade8112b3c0c67ffe3bde64d0a1a78" title="Append an element to the end of the Vector." alt="" coords="689,461,801,488"/>
+<area shape="rect" id="node3" href="$classWeatherDataStore.html#a1da33767dd034e56688ca1ade7bb194d" title="Populate the store from a flat Vector of WeatherRecord." alt="" coords="391,259,557,285"/>
+<area shape="rect" id="node13" href="$classCalculator.html#a1ab365d28c575502ccc1d163410e1dd0" title="Sample Pearson Correlation Coefficients for a given month across ALL loaded years." alt="" coords="104,647,315,673"/>
+<area shape="rect" id="node21" href="$ApplicationTest_8cpp.html#a2758236d015297dd4c0dda85e068bada" title=" " alt="" coords="163,867,256,893"/>
+<area shape="rect" id="node27" href="$ApplicationTest_8cpp.html#a2dd164834627e1c259506773447faa86" title=" " alt="" coords="181,917,238,944"/>
+<area shape="rect" id="node4" href="$classWeatherRecord.html#a3bf66211618f2fd578701a54f329a6cd" title="Get the date of the reading." alt="" coords="661,411,828,437"/>
+<area shape="rect" id="node5" href="$classDate.html#af2dcc6ce51dbb2bd798499a149bdffb7" title="Returns the month component (1&#45;12)." alt="" coords="689,5,801,32"/>
+<area shape="rect" id="node6" href="$classWeatherRecord.html#a023e9c1d9d623874de85f07af709962f" title="Get solar radiation in W/m2." alt="" coords="633,56,856,83"/>
+<area shape="rect" id="node7" href="$classWeatherRecord.html#a2a4190e5846de5552ecc4add0598d5d7" title="Get temperature in degrees C." alt="" coords="637,107,852,133"/>
+<area shape="rect" id="node8" href="$classWeatherRecord.html#a010224ea85b7e69f94f19e9ac0b9bd9c" title="Get wind speed in m/s." alt="" coords="642,157,847,184"/>
+<area shape="rect" id="node9" href="$classDate.html#ad79ce504482f317ddcfdc4ecad77671f" title="Returns the year component (&gt;= 1900)." alt="" coords="693,208,796,235"/>
+<area shape="rect" id="node10" href="$classBst.html#a385d605484b60272bd8c05f75e2a2b7f" title="Insert value into the tree (ITERATIVE)." alt="" coords="704,259,785,285"/>
+<area shape="rect" id="node11" href="$classVector.html#a40effefcf63fe290e881dcca17c7c178" title="Get the current number of stored elements." alt="" coords="904,715,997,741"/>
+<area shape="rect" id="node12" href="$classWeatherDataStore.html#a80785cbd10517085ff9534d5a85248c4" title="Convert wind speed from m/s to km/h." alt="" coords="655,360,834,387"/>
+<area shape="rect" id="node14" href="$Stats_8cpp.html#abdb68c0507a83f2b25c720c4905c8997" title="Calculate the Sample Pearson Correlation Coefficient." alt="" coords="421,765,527,792"/>
+<area shape="rect" id="node16" href="$classWeatherDataStore.html#a3b86ca025776c38c552b29cca96d6947" title="Collect parallel wind/temperature/solarRaw vectors for one month across ALL loaded years (used for sP..." alt="" coords="378,573,570,614"/>
+<area shape="rect" id="node20" href="$classCalculator.html#ad9a047ba0bdfb329564d3e9f3b66e04a" title="Convert a 10&#45;minute W/m2 solar reading to kWh/m2." alt="" coords="401,647,547,673"/>
+<area shape="rect" id="node15" href="$Stats_8cpp.html#a429b3945df168d2f205820c73347ac97" title="Calculate the arithmetic mean." alt="" coords="692,765,797,792"/>
+<area shape="rect" id="node17" href="$classMap.html#a62855ad7dd190c7679e9763e9f0a7015" title="Read the key at a given index (for index&#45;based iteration)." alt="" coords="697,613,792,640"/>
+<area shape="rect" id="node18" href="$classMap.html#a2be2a7c920956070df7c28e80c32060f" title="Non&#45;const pointer to the value for key, or nullptr if absent." alt="" coords="699,664,790,691"/>
+<area shape="rect" id="node19" href="$classMap.html#a2b81e60b8faaee80981fd4e5e7ec534c" title="Number of key&#45;value pairs currently stored." alt="" coords="705,512,784,539"/>
+<area shape="rect" id="node22" href="$classWeatherRecord.html#a8cf61a31119221915e0c947d16f15165" title="Set the date of the reading." alt="" coords="391,917,557,944"/>
+<area shape="rect" id="node23" href="$classWeatherRecord.html#a2c10f55282e74f43c02a5e25dd67899e" title="Set solar radiation in W/m2." alt="" coords="363,968,585,995"/>
+<area shape="rect" id="node24" href="$classWeatherRecord.html#a8d060127d155c938a0332787f2178614" title="Set temperature in degrees C." alt="" coords="367,1019,581,1045"/>
+<area shape="rect" id="node25" href="$classWeatherRecord.html#a35bbf259266335ed91c8006286152185" title="Set the time of the reading." alt="" coords="389,816,559,843"/>
+<area shape="rect" id="node26" href="$classWeatherRecord.html#af746ee2c646f1ec9b1010381e99a403e" title="Set wind speed in m/s." alt="" coords="371,867,577,893"/>
+</map>

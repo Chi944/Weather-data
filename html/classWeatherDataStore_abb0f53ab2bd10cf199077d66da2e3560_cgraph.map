@@ -1,0 +1,4 @@
+<map id="WeatherDataStore::GetYearCount" name="WeatherDataStore::GetYearCount">
+<area shape="rect" id="node1" title="Number of unique years stored in the BST." alt="" coords="5,5,188,47"/>
+<area shape="rect" id="node2" href="$classBst.html#a2fa9672cc879f25613c40690cf0098e8" title="Returns the number of nodes in the tree." alt="" coords="236,13,307,39"/>
+</map>

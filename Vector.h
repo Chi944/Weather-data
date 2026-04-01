@@ -47,14 +47,6 @@ public:
     explicit Vector(int n);
 
     /**
-     * @brief Destructor
-     *
-     * std::vector releases its heap allocation automatically; no manual
-     * resource management is required here.
-     */
-    ~Vector() {};
-
-    /**
      * @brief Insert element at the specified index
      * @param index Position to insert (0 to Size(), inclusive)
      * @param data  Element to insert
@@ -150,7 +142,7 @@ Vector<T>::Vector(int n)
     {
         n = 5;
     }
-    m_vector.resize(n);
+    m_vector.reserve(n);
 }
 
 template <class T>

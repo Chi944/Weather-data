@@ -31,6 +31,109 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Extensions />
+		<Unit filename="ApplicationTest.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="Bst.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="BstTest.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="Calculator.cpp" />
+		<Unit filename="Calculator.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="CalculatorTest.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="Constants.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="DataFileManager.cpp" />
+		<Unit filename="DataFileManager.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="DataLoader.cpp" />
+		<Unit filename="DataLoader.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="Date.cpp" />
+		<Unit filename="Date.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="Main.cpp" />
+		<Unit filename="Map.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="MapTest.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="MenuHandler.cpp" />
+		<Unit filename="MenuHandler.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="MenuHandlerTest.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="OutputHandler.cpp" />
+		<Unit filename="OutputHandler.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="OutputHandlerTest.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="Stats.cpp" />
+		<Unit filename="Stats.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="StatsTest.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="Time.cpp" />
+		<Unit filename="Time.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="Vector.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="WeatherDataStore.cpp" />
+		<Unit filename="WeatherDataStore.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="WeatherDataStoreTest.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="WeatherRecord.cpp" />
+		<Unit filename="WeatherRecord.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Extensions>
+			<DoxyBlocks>
+				<comment_style block="0" line="0" />
+				<doxyfile_project />
+				<doxyfile_build />
+				<doxyfile_warnings />
+				<doxyfile_output />
+				<doxyfile_dot />
+				<general />
+			</DoxyBlocks>
+		</Extensions>
 	</Project>
 </CodeBlocks_project_file>

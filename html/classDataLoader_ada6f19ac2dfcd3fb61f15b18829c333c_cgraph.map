@@ -1,0 +1,4 @@
+<map id="DataLoader::ParseHeader" name="DataLoader::ParseHeader">
+<area shape="rect" id="node1" title="Parse the CSV header row to locate column indices." alt="" coords="5,5,176,32"/>
+<area shape="rect" id="node2" href="$classDataLoader.html#a9590190c29da2982896b99170e66e328" title="Trim leading and trailing whitespace from a string." alt="" coords="224,5,348,32"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="Calculator::CalculateSolarTotal" name="Calculator::CalculateSolarTotal">
+<area shape="rect" id="node1" title="Total solar radiation for one month/year in kWh/m2." alt="" coords="343,99,513,141"/>
+<area shape="rect" id="node2" href="$classMenuHandler.html#a45d40ec3268b15a9d9cb9983fad21968" title="Option 4 — write Wind/Temp/Solar CSV with stdev and MAD for a year." alt="" coords="104,5,295,32"/>
+<area shape="rect" id="node4" href="$ApplicationTest_8cpp.html#a7064c30a2da86b85c9e45f109f860941" title=" " alt="" coords="171,56,228,83"/>
+<area shape="rect" id="node6" href="$ApplicationTest_8cpp.html#ad050d4c10d44c0dbdf836a9634b01dd0" title=" " alt="" coords="171,107,228,133"/>
+<area shape="rect" id="node7" href="$CalculatorTest_8cpp.html#a951b0bd5f85e5f684620df0f77f67e8d" title=" " alt="" coords="174,208,225,235"/>
+<area shape="rect" id="node9" href="$ApplicationTest_8cpp.html#a173dcc038af2ff4901ab0bef9de8b693" title=" " alt="" coords="174,157,225,184"/>
+<area shape="rect" id="node3" href="$Main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
+<area shape="rect" id="node5" href="$ApplicationTest_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,107,56,133"/>
+<area shape="rect" id="node8" href="$CalculatorTest_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,208,56,235"/>
+</map>

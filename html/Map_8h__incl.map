@@ -1,0 +1,5 @@
+<map id="Map.h" name="Map.h">
+<area shape="rect" id="node1" title="Minimal but complete generic Map (key&#45;&gt;value associative container)." alt="" coords="12,5,69,32"/>
+<area shape="rect" id="node2" href="$Vector_8h.html" title="Template Vector class a generic dynamic array with automatic resizing." alt="" coords="5,80,76,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="12,155,69,181"/>
+</map>

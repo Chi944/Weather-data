@@ -1,0 +1,5 @@
+<map id="WeatherRecord.h" name="WeatherRecord.h">
+<area shape="rect" id="node1" title="WeatherRecord class — a single weather station reading." alt="" coords="16,5,139,32"/>
+<area shape="rect" id="node2" href="$Date_8h.html" title="Calendar Date class with validation and comparison operators." alt="" coords="5,80,64,107"/>
+<area shape="rect" id="node3" href="$Time_8h.html" title="Time class representing a time of day (hour and minute)" alt="" coords="89,80,151,107"/>
+</map>

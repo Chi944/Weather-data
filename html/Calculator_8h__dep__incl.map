@@ -1,0 +1,10 @@
+<map id="Calculator.h" name="Calculator.h">
+<area shape="rect" id="node1" title="Domain&#45;specific statistics on WeatherDataStore data." alt="" coords="309,5,400,32"/>
+<area shape="rect" id="node2" href="$ApplicationTest_8cpp.html" title="Comprehensive full&#45;pipeline integration tests — Tests 1&#45;25." alt="" coords="5,80,139,107"/>
+<area shape="rect" id="node3" href="$Calculator_8cpp.html" title=" " alt="" coords="163,80,266,107"/>
+<area shape="rect" id="node4" href="$CalculatorTest_8cpp.html" title="Unit tests for Calculator (Assignment 2) — Test Plan tests 1&#45;6." alt="" coords="291,80,419,107"/>
+<area shape="rect" id="node5" href="$Main_8cpp.html" title="Entry point for the Weather Data Processor (Assignment 2)." alt="" coords="411,155,485,181"/>
+<area shape="rect" id="node6" href="$MenuHandler_8h.html" title="Drives the main menu loop and coordinates user interaction." alt="" coords="509,80,617,107"/>
+<area shape="rect" id="node7" href="$MenuHandler_8cpp.html" title=" " alt="" coords="509,155,630,181"/>
+<area shape="rect" id="node8" href="$MenuHandlerTest_8cpp.html" title="Unit tests for MenuHandler (Assignment 2) — Test Plan tests 1&#45;7." alt="" coords="655,155,801,181"/>
+</map>

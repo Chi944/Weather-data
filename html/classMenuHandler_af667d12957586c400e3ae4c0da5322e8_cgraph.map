@@ -1,0 +1,11 @@
+<map id="MenuHandler::GetYearInput" name="MenuHandler::GetYearInput">
+<area shape="rect" id="node1" title="Prompt for and validate a year that exists in the store." alt="" coords="5,123,187,149"/>
+<area shape="rect" id="node2" href="$classMenuHandler.html#a483ae51ff2b3d527e1ef3e1a60db686d" title="Print available years using BST in&#45;order traversal." alt="" coords="235,57,433,98"/>
+<area shape="rect" id="node6" href="$classMenuHandler.html#a4307e485c7414b20b6abce31ae118006" title="Read and validate an integer from standard input." alt="" coords="249,123,419,149"/>
+<area shape="rect" id="node8" href="$classWeatherDataStore.html#ae8ced8635216ee0c774580dcb074c046" title="Check whether a year exists in the BST." alt="" coords="236,173,432,200"/>
+<area shape="rect" id="node3" href="$classMenuHandler.html#aa6a33766f1caa303e7823b9613ea2ee3" title="Static visitor passed to Bst&lt;int&gt;::inOrderTraversal as f1Typ." alt="" coords="497,5,655,32"/>
+<area shape="rect" id="node4" href="$classWeatherDataStore.html#aeb52255929fa0e3da1a0420825c91186" title="In&#45;order traversal of the year BST using the f1Typ callback." alt="" coords="481,57,671,98"/>
+<area shape="rect" id="node5" href="$classBst.html#a64ecfcbd77a6702fe52c4ab65c0bbae1" title="In&#45;order traversal (left, root, right); invokes f1 at each node." alt="" coords="719,64,865,91"/>
+<area shape="rect" id="node7" href="$classMenuHandler.html#a549091dd8823d90e80b8613b0e01b325" title="Discard remaining characters in the input buffer." alt="" coords="493,123,659,149"/>
+<area shape="rect" id="node9" href="$classBst.html#a2be07b0658b8031db84052152e973777" title="Search for value (ITERATIVE)." alt="" coords="533,173,619,200"/>
+</map>

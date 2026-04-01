@@ -1,0 +1,5 @@
+<map id="Time::Time" name="Time::Time">
+<area shape="rect" id="node1" title="Parameterised constructor." alt="" coords="5,5,96,32"/>
+<area shape="rect" id="node2" href="$classTime.html#a4cceb51ee808a1cd4d4abf0d7e63252b" title="Set time components atomically." alt="" coords="144,5,253,32"/>
+<area shape="rect" id="node3" href="$classTime.html#ac0e33c841b5d350c53d45cfdf957727b" title="Validate hour and minute values." alt="" coords="301,5,400,32"/>
+</map>

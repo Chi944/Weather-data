@@ -1,0 +1,9 @@
+<map id="DataFileManager::IsDuplicateRecord" name="DataFileManager::IsDuplicateRecord">
+<area shape="rect" id="node1" title="Check whether a record&#39;s timestamp already exists in the BST." alt="" coords="439,74,629,115"/>
+<area shape="rect" id="node2" href="$classDataFileManager.html#a9560c4ed621cdaf9353d899cc4a8fb40" title="Load weather records from each CSV file in the list." alt="" coords="209,74,391,115"/>
+<area shape="rect" id="node3" href="$Main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="107,5,158,32"/>
+<area shape="rect" id="node4" href="$ApplicationTest_8cpp.html#ae7880ce913f3058a35ff106d5be9e243" title=" " alt="" coords="107,56,158,83"/>
+<area shape="rect" id="node6" href="$ApplicationTest_8cpp.html#a55d2f9565fe4d8c368f388e8da56bf49" title=" " alt="" coords="104,107,161,133"/>
+<area shape="rect" id="node7" href="$ApplicationTest_8cpp.html#aad3b96be7c6d1590c206be61dc1799bb" title=" " alt="" coords="104,157,161,184"/>
+<area shape="rect" id="node5" href="$ApplicationTest_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,107,56,133"/>
+</map>

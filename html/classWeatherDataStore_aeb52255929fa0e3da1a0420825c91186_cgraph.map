@@ -1,0 +1,4 @@
+<map id="WeatherDataStore::TraverseYears" name="WeatherDataStore::TraverseYears">
+<area shape="rect" id="node1" title="In&#45;order traversal of the year BST using the f1Typ callback." alt="" coords="5,5,195,47"/>
+<area shape="rect" id="node2" href="$classBst.html#a64ecfcbd77a6702fe52c4ab65c0bbae1" title="In&#45;order traversal (left, root, right); invokes f1 at each node." alt="" coords="243,13,389,39"/>
+</map>

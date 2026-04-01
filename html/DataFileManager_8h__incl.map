@@ -1,0 +1,15 @@
+<map id="DataFileManager.h" name="DataFileManager.h">
+<area shape="rect" id="node1" title="DataFileManager class — reads a file list and coordinates CSV loading." alt="" coords="259,5,388,32"/>
+<area shape="rect" id="node2" href="$Vector_8h.html" title="Template Vector class a generic dynamic array with automatic resizing." alt="" coords="5,155,76,181"/>
+<area shape="rect" id="node4" href="$WeatherRecord_8h.html" title="WeatherRecord class — a single weather station reading." alt="" coords="101,155,223,181"/>
+<area shape="rect" id="node7" href="$DataLoader_8h.html" title="DataLoader class — parses weather records from a single CSV file." alt="" coords="231,80,330,107"/>
+<area shape="rect" id="node10" title=" " alt="" coords="431,155,485,181"/>
+<area shape="rect" id="node11" href="$Bst_8h.html" title="Generic Binary Search Tree with function&#45;pointer traversal callbacks." alt="" coords="405,80,455,107"/>
+<area shape="rect" id="node13" href="$Constants_8h.html" title="Global constants used throughout the Weather Data Processor." alt="" coords="480,80,569,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="12,229,69,256"/>
+<area shape="rect" id="node5" href="$Date_8h.html" title="Calendar Date class with validation and comparison operators." alt="" coords="199,229,258,256"/>
+<area shape="rect" id="node6" href="$Time_8h.html" title="Time class representing a time of day (hour and minute)" alt="" coords="112,229,175,256"/>
+<area shape="rect" id="node8" title=" " alt="" coords="247,155,314,181"/>
+<area shape="rect" id="node9" title=" " alt="" coords="339,155,407,181"/>
+<area shape="rect" id="node12" title=" " alt="" coords="510,155,582,181"/>
+</map>

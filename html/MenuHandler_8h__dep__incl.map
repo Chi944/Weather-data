@@ -1,0 +1,6 @@
+<map id="MenuHandler.h" name="MenuHandler.h">
+<area shape="rect" id="node1" title="Drives the main menu loop and coordinates user interaction." alt="" coords="109,5,217,32"/>
+<area shape="rect" id="node2" href="$Main_8cpp.html" title="Entry point for the Weather Data Processor (Assignment 2)." alt="" coords="5,80,79,107"/>
+<area shape="rect" id="node3" href="$MenuHandler_8cpp.html" title=" " alt="" coords="103,80,224,107"/>
+<area shape="rect" id="node4" href="$MenuHandlerTest_8cpp.html" title="Unit tests for MenuHandler (Assignment 2) — Test Plan tests 1&#45;7." alt="" coords="249,80,395,107"/>
+</map>

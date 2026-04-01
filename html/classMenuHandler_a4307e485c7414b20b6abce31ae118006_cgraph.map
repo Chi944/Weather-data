@@ -1,0 +1,4 @@
+<map id="MenuHandler::GetIntInput" name="MenuHandler::GetIntInput">
+<area shape="rect" id="node1" title="Read and validate an integer from standard input." alt="" coords="5,5,176,32"/>
+<area shape="rect" id="node2" href="$classMenuHandler.html#a549091dd8823d90e80b8613b0e01b325" title="Discard remaining characters in the input buffer." alt="" coords="224,5,391,32"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="WeatherRecord::GetYear" name="WeatherRecord::GetYear">
+<area shape="rect" id="node1" title="Get the year of the reading." alt="" coords="5,5,172,32"/>
+<area shape="rect" id="node2" href="$classDate.html#ad79ce504482f317ddcfdc4ecad77671f" title="Returns the year component (&gt;= 1900)." alt="" coords="220,5,323,32"/>
+</map>

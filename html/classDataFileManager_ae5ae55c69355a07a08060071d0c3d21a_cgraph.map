@@ -1,0 +1,12 @@
+<map id="DataFileManager::IsDuplicateRecord" name="DataFileManager::IsDuplicateRecord">
+<area shape="rect" id="node1" title="Check whether a record&#39;s timestamp already exists in the BST." alt="" coords="5,175,196,217"/>
+<area shape="rect" id="node2" href="$classDataFileManager.html#a1bec8cfceefa7ac307244ff0888e10ee" title="Build a compact 64&#45;bit integer key from a record&#39;s timestamp." alt="" coords="244,157,487,184"/>
+<area shape="rect" id="node10" href="$classBst.html#a2be07b0658b8031db84052152e973777" title="Search for value (ITERATIVE)." alt="" coords="322,208,409,235"/>
+<area shape="rect" id="node3" href="$classWeatherRecord.html#a3bf66211618f2fd578701a54f329a6cd" title="Get the date of the reading." alt="" coords="536,5,703,32"/>
+<area shape="rect" id="node4" href="$classDate.html#a6304a67f1c13b239eb8e80ad68161e40" title="Returns the day component (1&#45;31)." alt="" coords="570,56,669,83"/>
+<area shape="rect" id="node5" href="$classTime.html#aaf65e0dc73514ffab9b3dd643cef9bdb" title="Get the hour component." alt="" coords="566,107,673,133"/>
+<area shape="rect" id="node6" href="$classTime.html#a86302564cc0783b402dc5f0e137a43c1" title="Get the minute component." alt="" coords="560,157,679,184"/>
+<area shape="rect" id="node7" href="$classDate.html#af2dcc6ce51dbb2bd798499a149bdffb7" title="Returns the month component (1&#45;12)." alt="" coords="563,208,675,235"/>
+<area shape="rect" id="node8" href="$classWeatherRecord.html#a0b6504148916aa257358984493542917" title="Get the time of the reading." alt="" coords="535,259,704,285"/>
+<area shape="rect" id="node9" href="$classDate.html#ad79ce504482f317ddcfdc4ecad77671f" title="Returns the year component (&gt;= 1900)." alt="" coords="568,309,671,336"/>
+</map>

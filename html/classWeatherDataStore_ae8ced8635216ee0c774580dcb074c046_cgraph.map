@@ -1,0 +1,4 @@
+<map id="WeatherDataStore::YearExists" name="WeatherDataStore::YearExists">
+<area shape="rect" id="node1" title="Check whether a year exists in the BST." alt="" coords="5,5,201,32"/>
+<area shape="rect" id="node2" href="$classBst.html#a2be07b0658b8031db84052152e973777" title="Search for value (ITERATIVE)." alt="" coords="249,5,336,32"/>
+</map>

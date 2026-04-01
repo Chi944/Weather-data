@@ -1,0 +1,5 @@
+<map id="Date::Date" name="Date::Date">
+<area shape="rect" id="node1" title="Parameterised constructor." alt="" coords="5,5,89,32"/>
+<area shape="rect" id="node2" href="$classDate.html#a6ba68893935e2398abc793fdd7ea78ae" title="Set all three date components atomically." alt="" coords="137,5,240,32"/>
+<area shape="rect" id="node3" href="$classDate.html#a5ad66dc3d4735ff0de1d494e7b4c8c51" title="Validate date components including leap&#45;year logic." alt="" coords="288,5,384,32"/>
+</map>

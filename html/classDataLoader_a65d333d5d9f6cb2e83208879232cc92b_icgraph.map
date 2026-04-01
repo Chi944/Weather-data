@@ -1,0 +1,13 @@
+<map id="DataLoader::ParseLine" name="DataLoader::ParseLine">
+<area shape="rect" id="node1" title="Parse one CSV data line into a WeatherRecord." alt="" coords="661,233,813,260"/>
+<area shape="rect" id="node2" href="$classDataLoader.html#ac2e2ccd9a5585756c25e2492a116f775" title="Load weather records from a CSV file." alt="" coords="439,233,613,260"/>
+<area shape="rect" id="node3" href="$classDataFileManager.html#a9560c4ed621cdaf9353d899cc4a8fb40" title="Load weather records from each CSV file in the list." alt="" coords="209,99,391,141"/>
+<area shape="rect" id="node9" href="$ApplicationTest_8cpp.html#acdb14d9344da5007ef3ecd3df6697e0c" title=" " alt="" coords="271,208,329,235"/>
+<area shape="rect" id="node10" href="$ApplicationTest_8cpp.html#a52de65c2c57d2a9477a2f1d1a9732798" title=" " alt="" coords="271,259,329,285"/>
+<area shape="rect" id="node11" href="$ApplicationTest_8cpp.html#ad8abcf618141aa2556410c8fa8f9fbc3" title=" " alt="" coords="271,309,329,336"/>
+<area shape="rect" id="node4" href="$Main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="107,5,158,32"/>
+<area shape="rect" id="node5" href="$ApplicationTest_8cpp.html#ae7880ce913f3058a35ff106d5be9e243" title=" " alt="" coords="107,56,158,83"/>
+<area shape="rect" id="node7" href="$ApplicationTest_8cpp.html#a55d2f9565fe4d8c368f388e8da56bf49" title=" " alt="" coords="104,107,161,133"/>
+<area shape="rect" id="node8" href="$ApplicationTest_8cpp.html#aad3b96be7c6d1590c206be61dc1799bb" title=" " alt="" coords="104,157,161,184"/>
+<area shape="rect" id="node6" href="$ApplicationTest_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,183,56,209"/>
+</map>

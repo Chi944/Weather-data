@@ -1,0 +1,18 @@
+<map id="Calculator::ToKwhM2" name="Calculator::ToKwhM2">
+<area shape="rect" id="node1" title="Convert a 10&#45;minute W/m2 solar reading to kWh/m2." alt="" coords="601,247,747,273"/>
+<area shape="rect" id="node2" href="$classCalculator.html#a1ab365d28c575502ccc1d163410e1dd0" title="Sample Pearson Correlation Coefficients for a given month across ALL loaded years." alt="" coords="343,335,553,361"/>
+<area shape="rect" id="node11" href="$classCalculator.html#ac2c094f5d63c8d4902417ce80f1f35fc" title="Total solar radiation for one month/year in kWh/m2." alt="" coords="363,175,533,217"/>
+<area shape="rect" id="node3" href="$classMenuHandler.html#a95154a538d5a3e5ed8fcba4648160c51" title="Option 3 — Sample Pearson Correlation Coefficients (S_T, S_R, T_R) for a user&#45;specified month across ..." alt="" coords="104,107,295,133"/>
+<area shape="rect" id="node5" href="$CalculatorTest_8cpp.html#ac00f388e1dd54d96c962b2652f3d1e1f" title=" " alt="" coords="174,461,225,488"/>
+<area shape="rect" id="node7" href="$ApplicationTest_8cpp.html#a5c3f3cc8bce123ce0e2a3cd748031ff1" title=" " alt="" coords="174,360,225,387"/>
+<area shape="rect" id="node9" href="$ApplicationTest_8cpp.html#ae35b7c559d5e5f42a765dc33f5f0af68" title=" " alt="" coords="174,411,225,437"/>
+<area shape="rect" id="node10" href="$ApplicationTest_8cpp.html#ac6c5b966ee8041bc6aefe36ecd9604ac" title=" " alt="" coords="174,309,225,336"/>
+<area shape="rect" id="node4" href="$Main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,56,56,83"/>
+<area shape="rect" id="node6" href="$CalculatorTest_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,360,56,387"/>
+<area shape="rect" id="node8" href="$ApplicationTest_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,259,56,285"/>
+<area shape="rect" id="node12" href="$classMenuHandler.html#a45d40ec3268b15a9d9cb9983fad21968" title="Option 4 — write Wind/Temp/Solar CSV with stdev and MAD for a year." alt="" coords="104,5,295,32"/>
+<area shape="rect" id="node13" href="$ApplicationTest_8cpp.html#a7064c30a2da86b85c9e45f109f860941" title=" " alt="" coords="171,208,228,235"/>
+<area shape="rect" id="node14" href="$ApplicationTest_8cpp.html#ad050d4c10d44c0dbdf836a9634b01dd0" title=" " alt="" coords="171,56,228,83"/>
+<area shape="rect" id="node15" href="$CalculatorTest_8cpp.html#a951b0bd5f85e5f684620df0f77f67e8d" title=" " alt="" coords="174,259,225,285"/>
+<area shape="rect" id="node16" href="$ApplicationTest_8cpp.html#a173dcc038af2ff4901ab0bef9de8b693" title=" " alt="" coords="174,157,225,184"/>
+</map>

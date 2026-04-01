@@ -1,0 +1,6 @@
+<map id="MenuHandler::GetMonthInput" name="MenuHandler::GetMonthInput">
+<area shape="rect" id="node1" title="Prompt for and validate a month number (1&#45;12)." alt="" coords="343,31,533,57"/>
+<area shape="rect" id="node2" href="$classMenuHandler.html#af7709c7a2db8fd4c43f3be927c454679" title="Option 1 — wind speed mean and stdev for a user&#45;specified month/year." alt="" coords="104,5,295,32"/>
+<area shape="rect" id="node4" href="$classMenuHandler.html#a95154a538d5a3e5ed8fcba4648160c51" title="Option 3 — Sample Pearson Correlation Coefficients (S_T, S_R, T_R) for a user&#45;specified month across ..." alt="" coords="104,56,295,83"/>
+<area shape="rect" id="node3" href="$Main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,31,56,57"/>
+</map>

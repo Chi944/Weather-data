@@ -1,0 +1,12 @@
+<map id="test2" name="test2">
+<area shape="rect" id="node1" title=" " alt="" coords="5,136,56,163"/>
+<area shape="rect" id="node2" href="$classCalculator.html#a527496e02142a64f499e7d0a360f4cd8" title="Mean, sample stdev, and MAD of wind speed for one month/year." alt="" coords="104,99,275,141"/>
+<area shape="rect" id="node10" href="$CalculatorTest_8cpp.html#a2dd164834627e1c259506773447faa86" title=" " alt="" coords="161,165,218,192"/>
+<area shape="rect" id="node3" href="$Stats_8cpp.html#a7f34f2a0de2f753a6df69a8bfb31fe96" title="Calculate the Mean Absolute Deviation." alt="" coords="382,5,482,32"/>
+<area shape="rect" id="node5" href="$Stats_8cpp.html#a429b3945df168d2f205820c73347ac97" title="Calculate the arithmetic mean." alt="" coords="379,56,485,83"/>
+<area shape="rect" id="node6" href="$Stats_8cpp.html#a03d4e56123316f2a19b526f4822ccb53" title="Calculate the sample standard deviation." alt="" coords="353,107,511,133"/>
+<area shape="rect" id="node7" href="$classVector.html#aa86dd68a83d05eb1494cb699353d9f73" title="Check whether the Vector contains no elements." alt="" coords="380,157,484,184"/>
+<area shape="rect" id="node8" href="$classWeatherDataStore.html#abed761387392a98505487e5f1fd721a9" title="Const pointer to the MonthlyData for a specific year and month." alt="" coords="323,208,541,235"/>
+<area shape="rect" id="node4" href="$classVector.html#a40effefcf63fe290e881dcca17c7c178" title="Get the current number of stored elements." alt="" coords="589,56,683,83"/>
+<area shape="rect" id="node9" href="$classMap.html#a2be2a7c920956070df7c28e80c32060f" title="Non&#45;const pointer to the value for key, or nullptr if absent." alt="" coords="591,208,681,235"/>
+</map>

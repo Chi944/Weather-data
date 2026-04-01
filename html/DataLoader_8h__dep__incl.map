@@ -1,0 +1,8 @@
+<map id="DataLoader.h" name="DataLoader.h">
+<area shape="rect" id="node1" title="DataLoader class — parses weather records from a single CSV file." alt="" coords="236,5,335,32"/>
+<area shape="rect" id="node2" href="$ApplicationTest_8cpp.html" title="Comprehensive full&#45;pipeline integration tests — Tests 1&#45;25." alt="" coords="5,155,139,181"/>
+<area shape="rect" id="node3" href="$DataFileManager_8h.html" title="DataFileManager class — reads a file list and coordinates CSV loading." alt="" coords="170,80,299,107"/>
+<area shape="rect" id="node5" href="$Main_8cpp.html" title="Entry point for the Weather Data Processor (Assignment 2)." alt="" coords="330,155,403,181"/>
+<area shape="rect" id="node6" href="$DataLoader_8cpp.html" title=" " alt="" coords="375,80,486,107"/>
+<area shape="rect" id="node4" href="$DataFileManager_8cpp.html" title=" " alt="" coords="163,155,306,181"/>
+</map>

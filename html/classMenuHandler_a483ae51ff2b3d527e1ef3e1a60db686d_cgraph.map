@@ -1,0 +1,6 @@
+<map id="MenuHandler::DisplayAvailableYears" name="MenuHandler::DisplayAvailableYears">
+<area shape="rect" id="node1" title="Print available years using BST in&#45;order traversal." alt="" coords="5,27,204,69"/>
+<area shape="rect" id="node2" href="$classMenuHandler.html#aa6a33766f1caa303e7823b9613ea2ee3" title="Static visitor passed to Bst&lt;int&gt;::inOrderTraversal as f1Typ." alt="" coords="267,5,426,32"/>
+<area shape="rect" id="node3" href="$classWeatherDataStore.html#aeb52255929fa0e3da1a0420825c91186" title="In&#45;order traversal of the year BST using the f1Typ callback." alt="" coords="252,57,441,98"/>
+<area shape="rect" id="node4" href="$classBst.html#a64ecfcbd77a6702fe52c4ab65c0bbae1" title="In&#45;order traversal (left, root, right); invokes f1 at each node." alt="" coords="489,64,636,91"/>
+</map>

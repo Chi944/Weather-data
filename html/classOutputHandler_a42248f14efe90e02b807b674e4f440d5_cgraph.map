@@ -1,0 +1,4 @@
+<map id="OutputHandler::DisplayNoData" name="OutputHandler::DisplayNoData">
+<area shape="rect" id="node1" title="Display a no&#45;data message for a month/year (option 1)." alt="" coords="5,5,200,32"/>
+<area shape="rect" id="node2" href="$classOutputHandler.html#ae7ca46a88c99dc3a052f2661c37381da" title="Convert a month number to its full name." alt="" coords="248,5,449,32"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="WeatherRecord::MatchesMonthYear" name="WeatherRecord::MatchesMonthYear">
+<area shape="rect" id="node1" title="Check whether this record belongs to a given month and year." alt="" coords="5,31,235,57"/>
+<area shape="rect" id="node2" href="$classDate.html#af2dcc6ce51dbb2bd798499a149bdffb7" title="Returns the month component (1&#45;12)." alt="" coords="283,5,395,32"/>
+<area shape="rect" id="node3" href="$classDate.html#ad79ce504482f317ddcfdc4ecad77671f" title="Returns the year component (&gt;= 1900)." alt="" coords="287,56,390,83"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="WeatherDataStore.h" name="WeatherDataStore.h">
+<area shape="rect" id="node1" title="Indexed weather data store." alt="" coords="134,5,273,32"/>
+<area shape="rect" id="node2" href="$Map_8h.html" title="Minimal but complete generic Map (key&#45;&gt;value associative container)." alt="" coords="9,80,67,107"/>
+<area shape="rect" id="node3" href="$Vector_8h.html" title="Template Vector class a generic dynamic array with automatic resizing." alt="" coords="5,155,76,181"/>
+<area shape="rect" id="node5" href="$WeatherRecord_8h.html" title="WeatherRecord class — a single weather station reading." alt="" coords="142,80,265,107"/>
+<area shape="rect" id="node8" href="$Bst_8h.html" title="Generic Binary Search Tree with function&#45;pointer traversal callbacks." alt="" coords="289,80,339,107"/>
+<area shape="rect" id="node10" href="$Constants_8h.html" title="Global constants used throughout the Weather Data Processor." alt="" coords="364,80,453,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="12,229,69,256"/>
+<area shape="rect" id="node6" href="$Date_8h.html" title="Calendar Date class with validation and comparison operators." alt="" coords="105,155,163,181"/>
+<area shape="rect" id="node7" href="$Time_8h.html" title="Time class representing a time of day (hour and minute)" alt="" coords="188,155,251,181"/>
+<area shape="rect" id="node9" title=" " alt="" coords="278,155,350,181"/>
+</map>

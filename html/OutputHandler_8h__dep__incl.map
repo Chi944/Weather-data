@@ -1,0 +1,10 @@
+<map id="OutputHandler.h" name="OutputHandler.h">
+<area shape="rect" id="node1" title="Formats and writes all program output for the Weather Data Processor." alt="" coords="211,5,325,32"/>
+<area shape="rect" id="node2" href="$ApplicationTest_8cpp.html" title="Comprehensive full&#45;pipeline integration tests — Tests 1&#45;25." alt="" coords="5,80,139,107"/>
+<area shape="rect" id="node3" href="$Main_8cpp.html" title="Entry point for the Weather Data Processor (Assignment 2)." alt="" coords="125,155,198,181"/>
+<area shape="rect" id="node4" href="$MenuHandler_8h.html" title="Drives the main menu loop and coordinates user interaction." alt="" coords="214,80,322,107"/>
+<area shape="rect" id="node7" href="$OutputHandler_8cpp.html" title=" " alt="" coords="347,80,475,107"/>
+<area shape="rect" id="node8" href="$OutputHandlerTest_8cpp.html" title="Unit tests for OutputHandler (Assignment 2) — Test Plan tests 1&#45;12." alt="" coords="499,80,653,107"/>
+<area shape="rect" id="node5" href="$MenuHandler_8cpp.html" title=" " alt="" coords="222,155,343,181"/>
+<area shape="rect" id="node6" href="$MenuHandlerTest_8cpp.html" title="Unit tests for MenuHandler (Assignment 2) — Test Plan tests 1&#45;7." alt="" coords="368,155,515,181"/>
+</map>

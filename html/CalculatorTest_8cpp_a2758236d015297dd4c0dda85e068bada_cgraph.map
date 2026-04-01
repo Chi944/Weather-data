@@ -1,0 +1,8 @@
+<map id="makeRecord" name="makeRecord">
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,99,133"/>
+<area shape="rect" id="node2" href="$classWeatherRecord.html#a8cf61a31119221915e0c947d16f15165" title="Set the date of the reading." alt="" coords="175,5,341,32"/>
+<area shape="rect" id="node3" href="$classWeatherRecord.html#a2c10f55282e74f43c02a5e25dd67899e" title="Set solar radiation in W/m2." alt="" coords="147,56,369,83"/>
+<area shape="rect" id="node4" href="$classWeatherRecord.html#a8d060127d155c938a0332787f2178614" title="Set temperature in degrees C." alt="" coords="151,107,365,133"/>
+<area shape="rect" id="node5" href="$classWeatherRecord.html#a35bbf259266335ed91c8006286152185" title="Set the time of the reading." alt="" coords="173,157,343,184"/>
+<area shape="rect" id="node6" href="$classWeatherRecord.html#af746ee2c646f1ec9b1010381e99a403e" title="Set wind speed in m/s." alt="" coords="155,208,361,235"/>
+</map>

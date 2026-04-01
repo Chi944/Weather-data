@@ -1,0 +1,4 @@
+<map id="WeatherDataStore::GetMonthData" name="WeatherDataStore::GetMonthData">
+<area shape="rect" id="node1" title="Const pointer to the MonthlyData for a specific year and month." alt="" coords="5,5,224,32"/>
+<area shape="rect" id="node2" href="$classMap.html#a2be2a7c920956070df7c28e80c32060f" title="Non&#45;const pointer to the value for key, or nullptr if absent." alt="" coords="272,5,363,32"/>
+</map>

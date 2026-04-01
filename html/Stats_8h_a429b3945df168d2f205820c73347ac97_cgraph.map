@@ -1,0 +1,4 @@
+<map id="CalculateMean" name="CalculateMean">
+<area shape="rect" id="node1" title="Calculate the arithmetic mean." alt="" coords="5,5,111,32"/>
+<area shape="rect" id="node2" href="$classVector.html#a40effefcf63fe290e881dcca17c7c178" title="Get the current number of stored elements." alt="" coords="159,5,252,32"/>
+</map>

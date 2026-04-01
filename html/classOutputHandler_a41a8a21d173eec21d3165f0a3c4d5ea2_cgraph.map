@@ -1,0 +1,4 @@
+<map id="OutputHandler::DisplayWindStats" name="OutputHandler::DisplayWindStats">
+<area shape="rect" id="node1" title="Display wind speed statistics for a single month/year (option 1)." alt="" coords="5,5,188,47"/>
+<area shape="rect" id="node2" href="$classOutputHandler.html#ae7ca46a88c99dc3a052f2661c37381da" title="Convert a month number to its full name." alt="" coords="236,13,437,39"/>
+</map>

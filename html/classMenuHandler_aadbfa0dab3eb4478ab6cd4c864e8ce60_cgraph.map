@@ -1,0 +1,4 @@
+<map id="MenuHandler::DisplayMenu" name="MenuHandler::DisplayMenu">
+<area shape="rect" id="node1" title="Display the main menu and return the user&#39;s choice (1&#45;5)." alt="" coords="5,5,184,32"/>
+<area shape="rect" id="node2" href="$classMenuHandler.html#a549091dd8823d90e80b8613b0e01b325" title="Discard remaining characters in the input buffer." alt="" coords="232,5,399,32"/>
+</map>

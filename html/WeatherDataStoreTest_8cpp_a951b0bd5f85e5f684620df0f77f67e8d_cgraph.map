@@ -1,0 +1,23 @@
+<map id="test4" name="test4">
+<area shape="rect" id="node1" title=" " alt="" coords="5,512,56,539"/>
+<area shape="rect" id="node2" href="$classVector.html#a87ade8112b3c0c67ffe3bde64d0a1a78" title="Append an element to the end of the Vector." alt="" coords="393,5,505,32"/>
+<area shape="rect" id="node3" href="$classWeatherDataStore.html#a1da33767dd034e56688ca1ade7bb194d" title="Populate the store from a flat Vector of WeatherRecord." alt="" coords="114,259,279,285"/>
+<area shape="rect" id="node13" href="$classWeatherDataStore.html#ac0e725b1d258f93f5ccce83208111905" title="Check whether data exists for a given year and month." alt="" coords="104,512,289,539"/>
+<area shape="rect" id="node15" href="$WeatherDataStoreTest_8cpp.html#a2758236d015297dd4c0dda85e068bada" title=" " alt="" coords="150,613,243,640"/>
+<area shape="rect" id="node21" href="$WeatherDataStoreTest_8cpp.html#a2dd164834627e1c259506773447faa86" title=" " alt="" coords="168,664,225,691"/>
+<area shape="rect" id="node4" href="$classWeatherRecord.html#a3bf66211618f2fd578701a54f329a6cd" title="Get the date of the reading." alt="" coords="365,56,532,83"/>
+<area shape="rect" id="node5" href="$classDate.html#af2dcc6ce51dbb2bd798499a149bdffb7" title="Returns the month component (1&#45;12)." alt="" coords="393,107,505,133"/>
+<area shape="rect" id="node6" href="$classWeatherRecord.html#a023e9c1d9d623874de85f07af709962f" title="Get solar radiation in W/m2." alt="" coords="337,157,560,184"/>
+<area shape="rect" id="node7" href="$classWeatherRecord.html#a2a4190e5846de5552ecc4add0598d5d7" title="Get temperature in degrees C." alt="" coords="341,208,556,235"/>
+<area shape="rect" id="node8" href="$classWeatherRecord.html#a010224ea85b7e69f94f19e9ac0b9bd9c" title="Get wind speed in m/s." alt="" coords="346,259,551,285"/>
+<area shape="rect" id="node9" href="$classDate.html#ad79ce504482f317ddcfdc4ecad77671f" title="Returns the year component (&gt;= 1900)." alt="" coords="397,309,500,336"/>
+<area shape="rect" id="node10" href="$classBst.html#a385d605484b60272bd8c05f75e2a2b7f" title="Insert value into the tree (ITERATIVE)." alt="" coords="408,360,489,387"/>
+<area shape="rect" id="node11" href="$classVector.html#a40effefcf63fe290e881dcca17c7c178" title="Get the current number of stored elements." alt="" coords="402,411,495,437"/>
+<area shape="rect" id="node12" href="$classWeatherDataStore.html#a80785cbd10517085ff9534d5a85248c4" title="Convert wind speed from m/s to km/h." alt="" coords="359,461,538,488"/>
+<area shape="rect" id="node14" href="$classMap.html#a2be2a7c920956070df7c28e80c32060f" title="Non&#45;const pointer to the value for key, or nullptr if absent." alt="" coords="403,512,494,539"/>
+<area shape="rect" id="node16" href="$classWeatherRecord.html#a8cf61a31119221915e0c947d16f15165" title="Set the date of the reading." alt="" coords="365,563,532,589"/>
+<area shape="rect" id="node17" href="$classWeatherRecord.html#a2c10f55282e74f43c02a5e25dd67899e" title="Set solar radiation in W/m2." alt="" coords="337,613,560,640"/>
+<area shape="rect" id="node18" href="$classWeatherRecord.html#a8d060127d155c938a0332787f2178614" title="Set temperature in degrees C." alt="" coords="341,664,556,691"/>
+<area shape="rect" id="node19" href="$classWeatherRecord.html#a35bbf259266335ed91c8006286152185" title="Set the time of the reading." alt="" coords="364,715,533,741"/>
+<area shape="rect" id="node20" href="$classWeatherRecord.html#af746ee2c646f1ec9b1010381e99a403e" title="Set wind speed in m/s." alt="" coords="346,765,551,792"/>
+</map>

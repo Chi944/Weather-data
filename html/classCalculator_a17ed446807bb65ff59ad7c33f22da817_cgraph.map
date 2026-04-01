@@ -1,0 +1,10 @@
+<map id="Calculator::CalculateTempStats" name="Calculator::CalculateTempStats">
+<area shape="rect" id="node1" title="Mean, sample stdev, and MAD of temperature for one month/year." alt="" coords="5,99,180,141"/>
+<area shape="rect" id="node2" href="$Stats_8cpp.html#a7f34f2a0de2f753a6df69a8bfb31fe96" title="Calculate the Mean Absolute Deviation." alt="" coords="287,5,387,32"/>
+<area shape="rect" id="node4" href="$Stats_8cpp.html#a429b3945df168d2f205820c73347ac97" title="Calculate the arithmetic mean." alt="" coords="285,56,390,83"/>
+<area shape="rect" id="node5" href="$Stats_8cpp.html#a03d4e56123316f2a19b526f4822ccb53" title="Calculate the sample standard deviation." alt="" coords="259,107,416,133"/>
+<area shape="rect" id="node6" href="$classVector.html#aa86dd68a83d05eb1494cb699353d9f73" title="Check whether the Vector contains no elements." alt="" coords="285,157,389,184"/>
+<area shape="rect" id="node7" href="$classWeatherDataStore.html#abed761387392a98505487e5f1fd721a9" title="Const pointer to the MonthlyData for a specific year and month." alt="" coords="228,208,447,235"/>
+<area shape="rect" id="node3" href="$classVector.html#a40effefcf63fe290e881dcca17c7c178" title="Get the current number of stored elements." alt="" coords="495,56,588,83"/>
+<area shape="rect" id="node8" href="$classMap.html#a2be2a7c920956070df7c28e80c32060f" title="Non&#45;const pointer to the value for key, or nullptr if absent." alt="" coords="496,208,587,235"/>
+</map>

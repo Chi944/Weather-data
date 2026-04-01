@@ -1,0 +1,4 @@
+<map id="Date::SetDate" name="Date::SetDate">
+<area shape="rect" id="node1" title="Set all three date components atomically." alt="" coords="5,5,108,32"/>
+<area shape="rect" id="node2" href="$classDate.html#a5ad66dc3d4735ff0de1d494e7b4c8c51" title="Validate date components including leap&#45;year logic." alt="" coords="156,5,252,32"/>
+</map>

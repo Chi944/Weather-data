@@ -1,0 +1,24 @@
+<map id="MenuHandler::HandleOption1" name="MenuHandler::HandleOption1">
+<area shape="rect" id="node1" title="Option 1 — wind speed mean and stdev for a user&#45;specified month/year." alt="" coords="5,259,196,285"/>
+<area shape="rect" id="node2" href="$classCalculator.html#a527496e02142a64f499e7d0a360f4cd8" title="Mean, sample stdev, and MAD of wind speed for one month/year." alt="" coords="256,117,427,158"/>
+<area shape="rect" id="node10" href="$classOutputHandler.html#a42248f14efe90e02b807b674e4f440d5" title="Display a no&#45;data message for a month/year (option 1)." alt="" coords="244,200,439,227"/>
+<area shape="rect" id="node12" href="$classOutputHandler.html#a41a8a21d173eec21d3165f0a3c4d5ea2" title="Display wind speed statistics for a single month/year (option 1)." alt="" coords="250,251,433,293"/>
+<area shape="rect" id="node13" href="$classMenuHandler.html#afc911b7a1190c5a629f189f830572624" title="Prompt for and validate a month number (1&#45;12)." alt="" coords="246,317,437,344"/>
+<area shape="rect" id="node16" href="$classMenuHandler.html#af667d12957586c400e3ae4c0da5322e8" title="Prompt for and validate a year that exists in the store." alt="" coords="251,371,432,397"/>
+<area shape="rect" id="node3" href="$Stats_8cpp.html#a7f34f2a0de2f753a6df69a8bfb31fe96" title="Calculate the Mean Absolute Deviation." alt="" coords="546,5,646,32"/>
+<area shape="rect" id="node5" href="$Stats_8cpp.html#a429b3945df168d2f205820c73347ac97" title="Calculate the arithmetic mean." alt="" coords="543,56,649,83"/>
+<area shape="rect" id="node6" href="$Stats_8cpp.html#a03d4e56123316f2a19b526f4822ccb53" title="Calculate the sample standard deviation." alt="" coords="517,107,675,133"/>
+<area shape="rect" id="node7" href="$classVector.html#aa86dd68a83d05eb1494cb699353d9f73" title="Check whether the Vector contains no elements." alt="" coords="544,157,648,184"/>
+<area shape="rect" id="node8" href="$classWeatherDataStore.html#abed761387392a98505487e5f1fd721a9" title="Const pointer to the MonthlyData for a specific year and month." alt="" coords="487,208,705,235"/>
+<area shape="rect" id="node4" href="$classVector.html#a40effefcf63fe290e881dcca17c7c178" title="Get the current number of stored elements." alt="" coords="801,56,895,83"/>
+<area shape="rect" id="node9" href="$classMap.html#a2be2a7c920956070df7c28e80c32060f" title="Non&#45;const pointer to the value for key, or nullptr if absent." alt="" coords="803,208,893,235"/>
+<area shape="rect" id="node11" href="$classOutputHandler.html#ae7ca46a88c99dc3a052f2661c37381da" title="Convert a month number to its full name." alt="" coords="495,259,697,285"/>
+<area shape="rect" id="node14" href="$classMenuHandler.html#a4307e485c7414b20b6abce31ae118006" title="Read and validate an integer from standard input." alt="" coords="511,313,681,340"/>
+<area shape="rect" id="node15" href="$classMenuHandler.html#a549091dd8823d90e80b8613b0e01b325" title="Discard remaining characters in the input buffer." alt="" coords="765,300,931,327"/>
+<area shape="rect" id="node17" href="$classMenuHandler.html#a483ae51ff2b3d527e1ef3e1a60db686d" title="Print available years using BST in&#45;order traversal." alt="" coords="497,365,695,406"/>
+<area shape="rect" id="node21" href="$classWeatherDataStore.html#ae8ced8635216ee0c774580dcb074c046" title="Check whether a year exists in the BST." alt="" coords="498,443,694,469"/>
+<area shape="rect" id="node18" href="$classMenuHandler.html#aa6a33766f1caa303e7823b9613ea2ee3" title="Static visitor passed to Bst&lt;int&gt;::inOrderTraversal as f1Typ." alt="" coords="769,351,927,377"/>
+<area shape="rect" id="node19" href="$classWeatherDataStore.html#aeb52255929fa0e3da1a0420825c91186" title="In&#45;order traversal of the year BST using the f1Typ callback." alt="" coords="753,402,943,443"/>
+<area shape="rect" id="node20" href="$classBst.html#a64ecfcbd77a6702fe52c4ab65c0bbae1" title="In&#45;order traversal (left, root, right); invokes f1 at each node." alt="" coords="991,409,1137,436"/>
+<area shape="rect" id="node22" href="$classBst.html#a2be07b0658b8031db84052152e973777" title="Search for value (ITERATIVE)." alt="" coords="805,468,891,495"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="Calculator::CalculateSolarTotal" name="Calculator::CalculateSolarTotal">
+<area shape="rect" id="node1" title="Total solar radiation for one month/year in kWh/m2." alt="" coords="5,49,176,90"/>
+<area shape="rect" id="node2" href="$classWeatherDataStore.html#abed761387392a98505487e5f1fd721a9" title="Const pointer to the MonthlyData for a specific year and month." alt="" coords="224,5,443,32"/>
+<area shape="rect" id="node4" href="$classVector.html#a40effefcf63fe290e881dcca17c7c178" title="Get the current number of stored elements." alt="" coords="287,56,380,83"/>
+<area shape="rect" id="node5" href="$classCalculator.html#ad9a047ba0bdfb329564d3e9f3b66e04a" title="Convert a 10&#45;minute W/m2 solar reading to kWh/m2." alt="" coords="261,107,406,133"/>
+<area shape="rect" id="node3" href="$classMap.html#a2be2a7c920956070df7c28e80c32060f" title="Non&#45;const pointer to the value for key, or nullptr if absent." alt="" coords="491,5,581,32"/>
+</map>

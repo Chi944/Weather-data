@@ -1,0 +1,12 @@
+<map id="Calculator::CalculateCorrelations" name="Calculator::CalculateCorrelations">
+<area shape="rect" id="node1" title="Sample Pearson Correlation Coefficients for a given month across ALL loaded years." alt="" coords="5,157,216,184"/>
+<area shape="rect" id="node2" href="$classVector.html#a87ade8112b3c0c67ffe3bde64d0a1a78" title="Append an element to the end of the Vector." alt="" coords="504,157,616,184"/>
+<area shape="rect" id="node3" href="$Stats_8cpp.html#abdb68c0507a83f2b25c720c4905c8997" title="Calculate the Sample Pearson Correlation Coefficient." alt="" coords="307,56,413,83"/>
+<area shape="rect" id="node5" href="$classVector.html#a40effefcf63fe290e881dcca17c7c178" title="Get the current number of stored elements." alt="" coords="664,81,757,108"/>
+<area shape="rect" id="node6" href="$classWeatherDataStore.html#a3b86ca025776c38c552b29cca96d6947" title="Collect parallel wind/temperature/solarRaw vectors for one month across ALL loaded years (used for sP..." alt="" coords="264,209,456,250"/>
+<area shape="rect" id="node10" href="$classCalculator.html#ad9a047ba0bdfb329564d3e9f3b66e04a" title="Convert a 10&#45;minute W/m2 solar reading to kWh/m2." alt="" coords="287,275,433,301"/>
+<area shape="rect" id="node4" href="$Stats_8cpp.html#a429b3945df168d2f205820c73347ac97" title="Calculate the arithmetic mean." alt="" coords="507,5,613,32"/>
+<area shape="rect" id="node7" href="$classMap.html#a62855ad7dd190c7679e9763e9f0a7015" title="Read the key at a given index (for index&#45;based iteration)." alt="" coords="513,259,607,285"/>
+<area shape="rect" id="node8" href="$classMap.html#a2be2a7c920956070df7c28e80c32060f" title="Non&#45;const pointer to the value for key, or nullptr if absent." alt="" coords="515,309,605,336"/>
+<area shape="rect" id="node9" href="$classMap.html#a2b81e60b8faaee80981fd4e5e7ec534c" title="Number of key&#45;value pairs currently stored." alt="" coords="521,360,599,387"/>
+</map>

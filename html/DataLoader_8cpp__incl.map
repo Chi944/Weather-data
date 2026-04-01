@@ -1,0 +1,13 @@
+<map id="DataLoader.cpp" name="DataLoader.cpp">
+<area shape="rect" id="node1" title=" " alt="" coords="314,5,425,32"/>
+<area shape="rect" id="node2" href="$DataLoader_8h.html" title="DataLoader class — parses weather records from a single CSV file." alt="" coords="231,80,329,107"/>
+<area shape="rect" id="node8" title=" " alt="" coords="5,155,72,181"/>
+<area shape="rect" id="node9" title=" " alt="" coords="338,155,406,181"/>
+<area shape="rect" id="node10" title=" " alt="" coords="430,155,485,181"/>
+<area shape="rect" id="node11" href="$Constants_8h.html" title="Global constants used throughout the Weather Data Processor." alt="" coords="458,80,547,107"/>
+<area shape="rect" id="node3" href="$Vector_8h.html" title="Template Vector class a generic dynamic array with automatic resizing." alt="" coords="243,155,314,181"/>
+<area shape="rect" id="node5" href="$WeatherRecord_8h.html" title="WeatherRecord class — a single weather station reading." alt="" coords="96,155,219,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="250,229,307,256"/>
+<area shape="rect" id="node6" href="$Date_8h.html" title="Calendar Date class with validation and comparison operators." alt="" coords="148,229,207,256"/>
+<area shape="rect" id="node7" href="$Time_8h.html" title="Time class representing a time of day (hour and minute)" alt="" coords="61,229,123,256"/>
+</map>

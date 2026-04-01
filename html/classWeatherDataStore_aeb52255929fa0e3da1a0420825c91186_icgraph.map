@@ -1,0 +1,18 @@
+<map id="WeatherDataStore::TraverseYears" name="WeatherDataStore::TraverseYears">
+<area shape="rect" id="node1" title="In&#45;order traversal of the year BST using the f1Typ callback." alt="" coords="819,403,1008,445"/>
+<area shape="rect" id="node2" href="$classMenuHandler.html#a483ae51ff2b3d527e1ef3e1a60db686d" title="Print available years using BST in&#45;order traversal." alt="" coords="572,251,771,293"/>
+<area shape="rect" id="node13" href="$ApplicationTest_8cpp.html#ae65a579e77f2cab84ce84b0130c11761" title=" " alt="" coords="643,411,700,437"/>
+<area shape="rect" id="node15" href="$WeatherDataStoreTest_8cpp.html#ae35b7c559d5e5f42a765dc33f5f0af68" title=" " alt="" coords="646,461,697,488"/>
+<area shape="rect" id="node3" href="$classMenuHandler.html#af667d12957586c400e3ae4c0da5322e8" title="Prompt for and validate a year that exists in the store." alt="" coords="343,81,524,108"/>
+<area shape="rect" id="node5" href="$Main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,81,56,108"/>
+<area shape="rect" id="node8" href="$MenuHandlerTest_8cpp.html#a0cc94918b6831f308d4fe4fa27f08299" title=" " alt="" coords="408,208,459,235"/>
+<area shape="rect" id="node10" href="$MenuHandlerTest_8cpp.html#a951b0bd5f85e5f684620df0f77f67e8d" title=" " alt="" coords="408,259,459,285"/>
+<area shape="rect" id="node11" href="$MenuHandlerTest_8cpp.html#ac00f388e1dd54d96c962b2652f3d1e1f" title=" " alt="" coords="408,309,459,336"/>
+<area shape="rect" id="node12" href="$MenuHandlerTest_8cpp.html#ae35b7c559d5e5f42a765dc33f5f0af68" title=" " alt="" coords="408,360,459,387"/>
+<area shape="rect" id="node4" href="$classMenuHandler.html#af7709c7a2db8fd4c43f3be927c454679" title="Option 1 — wind speed mean and stdev for a user&#45;specified month/year." alt="" coords="104,5,295,32"/>
+<area shape="rect" id="node6" href="$classMenuHandler.html#ae3b4403bc0616aacb60fb4d71d728979" title="Option 2 — temperature statistics for all months of a year." alt="" coords="104,56,295,83"/>
+<area shape="rect" id="node7" href="$classMenuHandler.html#a45d40ec3268b15a9d9cb9983fad21968" title="Option 4 — write Wind/Temp/Solar CSV with stdev and MAD for a year." alt="" coords="104,107,295,133"/>
+<area shape="rect" id="node9" href="$MenuHandlerTest_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="174,284,225,311"/>
+<area shape="rect" id="node14" href="$ApplicationTest_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="408,411,459,437"/>
+<area shape="rect" id="node16" href="$WeatherDataStoreTest_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="408,461,459,488"/>
+</map>

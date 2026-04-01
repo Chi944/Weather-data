@@ -1,0 +1,26 @@
+<map id="test4" name="test4">
+<area shape="rect" id="node1" title=" " alt="" coords="5,483,56,509"/>
+<area shape="rect" id="node2" href="$MenuHandlerTest_8cpp.html#ad04c39c4b1b1994d69a98d688a10e3c0" title=" " alt="" coords="134,335,273,361"/>
+<area shape="rect" id="node19" href="$MenuHandlerTest_8cpp.html#a036b6e295c8c1cf79140c0ccd2bb1399" title=" " alt="" coords="169,453,238,480"/>
+<area shape="rect" id="node20" href="$classMenuHandler.html#a483ae51ff2b3d527e1ef3e1a60db686d" title="Print available years using BST in&#45;order traversal." alt="" coords="104,505,303,546"/>
+<area shape="rect" id="node24" href="$MenuHandlerTest_8cpp.html#a2dd164834627e1c259506773447faa86" title=" " alt="" coords="175,571,232,597"/>
+<area shape="rect" id="node3" href="$classVector.html#a87ade8112b3c0c67ffe3bde64d0a1a78" title="Append an element to the end of the Vector." alt="" coords="677,5,789,32"/>
+<area shape="rect" id="node4" href="$classWeatherDataStore.html#a1da33767dd034e56688ca1ade7bb194d" title="Populate the store from a flat Vector of WeatherRecord." alt="" coords="379,208,545,235"/>
+<area shape="rect" id="node14" href="$classWeatherRecord.html#a8cf61a31119221915e0c947d16f15165" title="Set the date of the reading." alt="" coords="379,259,545,285"/>
+<area shape="rect" id="node15" href="$classWeatherRecord.html#a2c10f55282e74f43c02a5e25dd67899e" title="Set solar radiation in W/m2." alt="" coords="351,309,573,336"/>
+<area shape="rect" id="node16" href="$classWeatherRecord.html#a8d060127d155c938a0332787f2178614" title="Set temperature in degrees C." alt="" coords="355,360,569,387"/>
+<area shape="rect" id="node17" href="$classWeatherRecord.html#a35bbf259266335ed91c8006286152185" title="Set the time of the reading." alt="" coords="377,411,547,437"/>
+<area shape="rect" id="node18" href="$classWeatherRecord.html#af746ee2c646f1ec9b1010381e99a403e" title="Set wind speed in m/s." alt="" coords="359,461,565,488"/>
+<area shape="rect" id="node5" href="$classWeatherRecord.html#a3bf66211618f2fd578701a54f329a6cd" title="Get the date of the reading." alt="" coords="649,56,816,83"/>
+<area shape="rect" id="node6" href="$classDate.html#af2dcc6ce51dbb2bd798499a149bdffb7" title="Returns the month component (1&#45;12)." alt="" coords="677,107,789,133"/>
+<area shape="rect" id="node7" href="$classWeatherRecord.html#a023e9c1d9d623874de85f07af709962f" title="Get solar radiation in W/m2." alt="" coords="621,157,844,184"/>
+<area shape="rect" id="node8" href="$classWeatherRecord.html#a2a4190e5846de5552ecc4add0598d5d7" title="Get temperature in degrees C." alt="" coords="625,208,840,235"/>
+<area shape="rect" id="node9" href="$classWeatherRecord.html#a010224ea85b7e69f94f19e9ac0b9bd9c" title="Get wind speed in m/s." alt="" coords="630,259,835,285"/>
+<area shape="rect" id="node10" href="$classDate.html#ad79ce504482f317ddcfdc4ecad77671f" title="Returns the year component (&gt;= 1900)." alt="" coords="681,309,784,336"/>
+<area shape="rect" id="node11" href="$classBst.html#a385d605484b60272bd8c05f75e2a2b7f" title="Insert value into the tree (ITERATIVE)." alt="" coords="692,360,773,387"/>
+<area shape="rect" id="node12" href="$classVector.html#a40effefcf63fe290e881dcca17c7c178" title="Get the current number of stored elements." alt="" coords="686,411,779,437"/>
+<area shape="rect" id="node13" href="$classWeatherDataStore.html#a80785cbd10517085ff9534d5a85248c4" title="Convert wind speed from m/s to km/h." alt="" coords="643,461,822,488"/>
+<area shape="rect" id="node21" href="$classMenuHandler.html#aa6a33766f1caa303e7823b9613ea2ee3" title="Static visitor passed to Bst&lt;int&gt;::inOrderTraversal as f1Typ." alt="" coords="383,512,541,539"/>
+<area shape="rect" id="node22" href="$classWeatherDataStore.html#aeb52255929fa0e3da1a0420825c91186" title="In&#45;order traversal of the year BST using the f1Typ callback." alt="" coords="367,563,557,605"/>
+<area shape="rect" id="node23" href="$classBst.html#a64ecfcbd77a6702fe52c4ab65c0bbae1" title="In&#45;order traversal (left, root, right); invokes f1 at each node." alt="" coords="659,571,806,597"/>
+</map>

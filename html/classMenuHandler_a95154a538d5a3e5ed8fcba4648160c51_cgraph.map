@@ -1,0 +1,20 @@
+<map id="MenuHandler::HandleOption3" name="MenuHandler::HandleOption3">
+<area shape="rect" id="node1" title="Option 3 — Sample Pearson Correlation Coefficients (S_T, S_R, T_R) for a user&#45;specified month across ..." alt="" coords="5,360,196,387"/>
+<area shape="rect" id="node2" href="$classCalculator.html#a1ab365d28c575502ccc1d163410e1dd0" title="Sample Pearson Correlation Coefficients for a given month across ALL loaded years." alt="" coords="252,248,463,275"/>
+<area shape="rect" id="node12" href="$classOutputHandler.html#a4a74145e514c005ebea46f0a141fcca7" title="Display the three sPCC values: S_T, S_R, T_R (option 3)." alt="" coords="265,309,450,336"/>
+<area shape="rect" id="node13" href="$classOutputHandler.html#a1f3a1d32dcac805426c076966c425fb5" title="Display the sPCC section header showing the selected month (option 3)." alt="" coords="244,360,471,387"/>
+<area shape="rect" id="node15" href="$classOutputHandler.html#a90985060afea521d50fc6a0c0d490039" title="Display a no&#45;data message when sPCC cannot be computed (option 3)." alt="" coords="244,411,471,437"/>
+<area shape="rect" id="node16" href="$classMenuHandler.html#afc911b7a1190c5a629f189f830572624" title="Prompt for and validate a month number (1&#45;12)." alt="" coords="262,461,453,488"/>
+<area shape="rect" id="node3" href="$classVector.html#a87ade8112b3c0c67ffe3bde64d0a1a78" title="Append an element to the end of the Vector." alt="" coords="795,208,907,235"/>
+<area shape="rect" id="node4" href="$Stats_8cpp.html#abdb68c0507a83f2b25c720c4905c8997" title="Calculate the Sample Pearson Correlation Coefficient." alt="" coords="567,277,672,304"/>
+<area shape="rect" id="node6" href="$classVector.html#a40effefcf63fe290e881dcca17c7c178" title="Get the current number of stored elements." alt="" coords="983,284,1076,311"/>
+<area shape="rect" id="node7" href="$classWeatherDataStore.html#a3b86ca025776c38c552b29cca96d6947" title="Collect parallel wind/temperature/solarRaw vectors for one month across ALL loaded years (used for sP..." alt="" coords="523,105,715,146"/>
+<area shape="rect" id="node11" href="$classCalculator.html#ad9a047ba0bdfb329564d3e9f3b66e04a" title="Convert a 10&#45;minute W/m2 solar reading to kWh/m2." alt="" coords="547,176,692,203"/>
+<area shape="rect" id="node5" href="$Stats_8cpp.html#a429b3945df168d2f205820c73347ac97" title="Calculate the arithmetic mean." alt="" coords="799,309,904,336"/>
+<area shape="rect" id="node8" href="$classMap.html#a62855ad7dd190c7679e9763e9f0a7015" title="Read the key at a given index (for index&#45;based iteration)." alt="" coords="804,107,899,133"/>
+<area shape="rect" id="node9" href="$classMap.html#a2be2a7c920956070df7c28e80c32060f" title="Non&#45;const pointer to the value for key, or nullptr if absent." alt="" coords="806,157,897,184"/>
+<area shape="rect" id="node10" href="$classMap.html#a2b81e60b8faaee80981fd4e5e7ec534c" title="Number of key&#45;value pairs currently stored." alt="" coords="812,5,891,32"/>
+<area shape="rect" id="node14" href="$classOutputHandler.html#ae7ca46a88c99dc3a052f2661c37381da" title="Convert a month number to its full name." alt="" coords="519,411,720,437"/>
+<area shape="rect" id="node17" href="$classMenuHandler.html#a4307e485c7414b20b6abce31ae118006" title="Read and validate an integer from standard input." alt="" coords="534,461,705,488"/>
+<area shape="rect" id="node18" href="$classMenuHandler.html#a549091dd8823d90e80b8613b0e01b325" title="Discard remaining characters in the input buffer." alt="" coords="768,461,935,488"/>
+</map>

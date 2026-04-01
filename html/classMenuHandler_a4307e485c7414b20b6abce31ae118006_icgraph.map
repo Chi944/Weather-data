@@ -1,0 +1,10 @@
+<map id="MenuHandler::GetIntInput" name="MenuHandler::GetIntInput">
+<area shape="rect" id="node1" title="Read and validate an integer from standard input." alt="" coords="581,81,752,108"/>
+<area shape="rect" id="node2" href="$classMenuHandler.html#afc911b7a1190c5a629f189f830572624" title="Prompt for and validate a month number (1&#45;12)." alt="" coords="343,56,533,83"/>
+<area shape="rect" id="node6" href="$classMenuHandler.html#af667d12957586c400e3ae4c0da5322e8" title="Prompt for and validate a year that exists in the store." alt="" coords="347,107,529,133"/>
+<area shape="rect" id="node3" href="$classMenuHandler.html#af7709c7a2db8fd4c43f3be927c454679" title="Option 1 — wind speed mean and stdev for a user&#45;specified month/year." alt="" coords="104,56,295,83"/>
+<area shape="rect" id="node5" href="$classMenuHandler.html#a95154a538d5a3e5ed8fcba4648160c51" title="Option 3 — Sample Pearson Correlation Coefficients (S_T, S_R, T_R) for a user&#45;specified month across ..." alt="" coords="104,5,295,32"/>
+<area shape="rect" id="node4" href="$Main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,81,56,108"/>
+<area shape="rect" id="node7" href="$classMenuHandler.html#ae3b4403bc0616aacb60fb4d71d728979" title="Option 2 — temperature statistics for all months of a year." alt="" coords="104,107,295,133"/>
+<area shape="rect" id="node8" href="$classMenuHandler.html#a45d40ec3268b15a9d9cb9983fad21968" title="Option 4 — write Wind/Temp/Solar CSV with stdev and MAD for a year." alt="" coords="104,157,295,184"/>
+</map>

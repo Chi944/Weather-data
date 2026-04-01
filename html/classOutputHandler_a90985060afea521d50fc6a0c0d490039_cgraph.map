@@ -1,0 +1,4 @@
+<map id="OutputHandler::DisplaySPCCNoData" name="OutputHandler::DisplaySPCCNoData">
+<area shape="rect" id="node1" title="Display a no&#45;data message when sPCC cannot be computed (option 3)." alt="" coords="5,5,232,32"/>
+<area shape="rect" id="node2" href="$classOutputHandler.html#ae7ca46a88c99dc3a052f2661c37381da" title="Convert a month number to its full name." alt="" coords="280,5,481,32"/>
+</map>

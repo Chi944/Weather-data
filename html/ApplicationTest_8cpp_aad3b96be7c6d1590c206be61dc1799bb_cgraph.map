@@ -1,0 +1,36 @@
+<map id="test19" name="test19">
+<area shape="rect" id="node1" title=" " alt="" coords="5,461,63,488"/>
+<area shape="rect" id="node2" href="$classVector.html#a87ade8112b3c0c67ffe3bde64d0a1a78" title="Append an element to the end of the Vector." alt="" coords="661,223,773,249"/>
+<area shape="rect" id="node3" href="$classDataFileManager.html#a369f4cad57ef6cdc6a2e16c3a33d0985" title="Number of duplicate records that were filtered out." alt="" coords="111,454,309,495"/>
+<area shape="rect" id="node4" href="$classDataFileManager.html#a9560c4ed621cdaf9353d899cc4a8fb40" title="Load weather records from each CSV file in the list." alt="" coords="119,389,301,430"/>
+<area shape="rect" id="node33" href="$ApplicationTest_8cpp.html#a2dd164834627e1c259506773447faa86" title=" " alt="" coords="181,520,239,547"/>
+<area shape="rect" id="node34" href="$ApplicationTest_8cpp.html#ae2cbfbae222c672abf49cf08eed1f3d9" title=" " alt="" coords="173,571,247,597"/>
+<area shape="rect" id="node5" href="$classDataLoader.html#a85085968b6cb48d3c6096cf663199bb5" title="Get the most recent error description." alt="" coords="369,421,537,448"/>
+<area shape="rect" id="node6" href="$classBst.html#a385d605484b60272bd8c05f75e2a2b7f" title="Insert value into the tree (ITERATIVE)." alt="" coords="412,472,493,499"/>
+<area shape="rect" id="node7" href="$classDataFileManager.html#ae5ae55c69355a07a08060071d0c3d21a" title="Check whether a record&#39;s timestamp already exists in the BST." alt="" coords="357,574,548,615"/>
+<area shape="rect" id="node8" href="$classDataFileManager.html#a1bec8cfceefa7ac307244ff0888e10ee" title="Build a compact 64&#45;bit integer key from a record&#39;s timestamp." alt="" coords="596,555,839,581"/>
+<area shape="rect" id="node17" href="$classDataLoader.html#ac2e2ccd9a5585756c25e2492a116f775" title="Load weather records from a CSV file." alt="" coords="365,371,540,397"/>
+<area shape="rect" id="node32" href="$classVector.html#a40effefcf63fe290e881dcca17c7c178" title="Get the current number of stored elements." alt="" coords="406,269,499,296"/>
+<area shape="rect" id="node16" href="$classBst.html#a2be07b0658b8031db84052152e973777" title="Search for value (ITERATIVE)." alt="" coords="674,605,761,632"/>
+<area shape="rect" id="node9" href="$classWeatherRecord.html#a3bf66211618f2fd578701a54f329a6cd" title="Get the date of the reading." alt="" coords="915,427,1081,453"/>
+<area shape="rect" id="node10" href="$classDate.html#a6304a67f1c13b239eb8e80ad68161e40" title="Returns the day component (1&#45;31)." alt="" coords="949,477,1047,504"/>
+<area shape="rect" id="node11" href="$classTime.html#aaf65e0dc73514ffab9b3dd643cef9bdb" title="Get the hour component." alt="" coords="945,528,1051,555"/>
+<area shape="rect" id="node12" href="$classTime.html#a86302564cc0783b402dc5f0e137a43c1" title="Get the minute component." alt="" coords="939,579,1057,605"/>
+<area shape="rect" id="node13" href="$classDate.html#af2dcc6ce51dbb2bd798499a149bdffb7" title="Returns the month component (1&#45;12)." alt="" coords="942,629,1054,656"/>
+<area shape="rect" id="node14" href="$classWeatherRecord.html#a0b6504148916aa257358984493542917" title="Get the time of the reading." alt="" coords="913,680,1083,707"/>
+<area shape="rect" id="node15" href="$classDate.html#ad79ce504482f317ddcfdc4ecad77671f" title="Returns the year component (&gt;= 1900)." alt="" coords="947,731,1049,757"/>
+<area shape="rect" id="node18" href="$classDataLoader.html#ada6f19ac2dfcd3fb61f15b18829c333c" title="Parse the CSV header row to locate column indices." alt="" coords="632,373,803,400"/>
+<area shape="rect" id="node20" href="$classDataLoader.html#a65d333d5d9f6cb2e83208879232cc92b" title="Parse one CSV data line into a WeatherRecord." alt="" coords="641,273,793,300"/>
+<area shape="rect" id="node19" href="$classDataLoader.html#a9590190c29da2982896b99170e66e328" title="Trim leading and trailing whitespace from a string." alt="" coords="936,376,1060,403"/>
+<area shape="rect" id="node21" href="$classDataLoader.html#a83bd1e784d8ccd4abc94a9bb978ecbb7" title="Parse the combined WAST date/time field." alt="" coords="915,56,1081,83"/>
+<area shape="rect" id="node26" href="$classDataLoader.html#a5bc0fee456cef3219e0d227cbd598b59" title="Convert a string to float, returning a default on failure." alt="" coords="912,107,1084,149"/>
+<area shape="rect" id="node27" href="$classWeatherRecord.html#a8cf61a31119221915e0c947d16f15165" title="Set the date of the reading." alt="" coords="915,173,1081,200"/>
+<area shape="rect" id="node28" href="$classWeatherRecord.html#a2c10f55282e74f43c02a5e25dd67899e" title="Set solar radiation in W/m2." alt="" coords="887,224,1109,251"/>
+<area shape="rect" id="node29" href="$classWeatherRecord.html#a8d060127d155c938a0332787f2178614" title="Set temperature in degrees C." alt="" coords="891,275,1105,301"/>
+<area shape="rect" id="node30" href="$classWeatherRecord.html#a35bbf259266335ed91c8006286152185" title="Set the time of the reading." alt="" coords="913,325,1083,352"/>
+<area shape="rect" id="node31" href="$classWeatherRecord.html#af746ee2c646f1ec9b1010381e99a403e" title="Set wind speed in m/s." alt="" coords="895,5,1101,32"/>
+<area shape="rect" id="node22" href="$classDate.html#a6ba68893935e2398abc793fdd7ea78ae" title="Set all three date components atomically." alt="" coords="1161,31,1263,57"/>
+<area shape="rect" id="node24" href="$classTime.html#a4cceb51ee808a1cd4d4abf0d7e63252b" title="Set time components atomically." alt="" coords="1157,81,1267,108"/>
+<area shape="rect" id="node23" href="$classDate.html#a5ad66dc3d4735ff0de1d494e7b4c8c51" title="Validate date components including leap&#45;year logic." alt="" coords="1316,31,1412,57"/>
+<area shape="rect" id="node25" href="$classTime.html#ac0e33c841b5d350c53d45cfdf957727b" title="Validate hour and minute values." alt="" coords="1315,81,1413,108"/>
+</map>

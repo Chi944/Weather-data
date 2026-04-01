@@ -1,0 +1,7 @@
+<map id="OutputHandler::DisplaySPCC" name="OutputHandler::DisplaySPCC">
+<area shape="rect" id="node1" title="Display the three sPCC values: S_T, S_R, T_R (option 3)." alt="" coords="343,31,528,57"/>
+<area shape="rect" id="node2" href="$classMenuHandler.html#a95154a538d5a3e5ed8fcba4648160c51" title="Option 3 — Sample Pearson Correlation Coefficients (S_T, S_R, T_R) for a user&#45;specified month across ..." alt="" coords="104,5,295,32"/>
+<area shape="rect" id="node4" href="$OutputHandlerTest_8cpp.html#ae35b7c559d5e5f42a765dc33f5f0af68" title=" " alt="" coords="174,56,225,83"/>
+<area shape="rect" id="node3" href="$Main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
+<area shape="rect" id="node5" href="$OutputHandlerTest_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,56,56,83"/>
+</map>

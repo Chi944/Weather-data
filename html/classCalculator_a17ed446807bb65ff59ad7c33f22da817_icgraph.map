@@ -1,0 +1,14 @@
+<map id="Calculator::CalculateTempStats" name="Calculator::CalculateTempStats">
+<area shape="rect" id="node1" title="Mean, sample stdev, and MAD of temperature for one month/year." alt="" coords="343,175,517,217"/>
+<area shape="rect" id="node2" href="$classMenuHandler.html#ae3b4403bc0616aacb60fb4d71d728979" title="Option 2 — temperature statistics for all months of a year." alt="" coords="104,5,295,32"/>
+<area shape="rect" id="node4" href="$classMenuHandler.html#a45d40ec3268b15a9d9cb9983fad21968" title="Option 4 — write Wind/Temp/Solar CSV with stdev and MAD for a year." alt="" coords="104,56,295,83"/>
+<area shape="rect" id="node5" href="$ApplicationTest_8cpp.html#a88f458a1ceb464bea6df32df89f2b212" title=" " alt="" coords="171,107,228,133"/>
+<area shape="rect" id="node7" href="$ApplicationTest_8cpp.html#ac6200163de84b3dab8047253d6fb61ab" title=" " alt="" coords="171,157,228,184"/>
+<area shape="rect" id="node8" href="$CalculatorTest_8cpp.html#a0cc94918b6831f308d4fe4fa27f08299" title=" " alt="" coords="174,360,225,387"/>
+<area shape="rect" id="node10" href="$ApplicationTest_8cpp.html#a951b0bd5f85e5f684620df0f77f67e8d" title=" " alt="" coords="174,208,225,235"/>
+<area shape="rect" id="node11" href="$ApplicationTest_8cpp.html#ac00f388e1dd54d96c962b2652f3d1e1f" title=" " alt="" coords="174,259,225,285"/>
+<area shape="rect" id="node12" href="$ApplicationTest_8cpp.html#a173dcc038af2ff4901ab0bef9de8b693" title=" " alt="" coords="174,309,225,336"/>
+<area shape="rect" id="node3" href="$Main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,31,56,57"/>
+<area shape="rect" id="node6" href="$ApplicationTest_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,208,56,235"/>
+<area shape="rect" id="node9" href="$CalculatorTest_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,360,56,387"/>
+</map>

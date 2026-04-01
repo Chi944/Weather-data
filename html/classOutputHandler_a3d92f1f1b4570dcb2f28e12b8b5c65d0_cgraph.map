@@ -1,0 +1,4 @@
+<map id="OutputHandler::DisplayTempForMonth" name="OutputHandler::DisplayTempForMonth">
+<area shape="rect" id="node1" title="Display temperature statistics for one month (option 2)." alt="" coords="5,5,192,47"/>
+<area shape="rect" id="node2" href="$classOutputHandler.html#ae7ca46a88c99dc3a052f2661c37381da" title="Convert a month number to its full name." alt="" coords="240,13,441,39"/>
+</map>

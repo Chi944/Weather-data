@@ -1,0 +1,10 @@
+<map id="DataFileManager::MakeTimestampKey" name="DataFileManager::MakeTimestampKey">
+<area shape="rect" id="node1" title="Build a compact 64&#45;bit integer key from a record&#39;s timestamp." alt="" coords="5,157,248,184"/>
+<area shape="rect" id="node2" href="$classWeatherRecord.html#a3bf66211618f2fd578701a54f329a6cd" title="Get the date of the reading." alt="" coords="297,5,464,32"/>
+<area shape="rect" id="node3" href="$classDate.html#a6304a67f1c13b239eb8e80ad68161e40" title="Returns the day component (1&#45;31)." alt="" coords="331,56,430,83"/>
+<area shape="rect" id="node4" href="$classTime.html#aaf65e0dc73514ffab9b3dd643cef9bdb" title="Get the hour component." alt="" coords="327,107,434,133"/>
+<area shape="rect" id="node5" href="$classTime.html#a86302564cc0783b402dc5f0e137a43c1" title="Get the minute component." alt="" coords="321,157,440,184"/>
+<area shape="rect" id="node6" href="$classDate.html#af2dcc6ce51dbb2bd798499a149bdffb7" title="Returns the month component (1&#45;12)." alt="" coords="325,208,437,235"/>
+<area shape="rect" id="node7" href="$classWeatherRecord.html#a0b6504148916aa257358984493542917" title="Get the time of the reading." alt="" coords="296,259,465,285"/>
+<area shape="rect" id="node8" href="$classDate.html#ad79ce504482f317ddcfdc4ecad77671f" title="Returns the year component (&gt;= 1900)." alt="" coords="329,309,432,336"/>
+</map>

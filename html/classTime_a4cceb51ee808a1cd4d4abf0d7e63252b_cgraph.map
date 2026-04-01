@@ -1,0 +1,4 @@
+<map id="Time::SetTime" name="Time::SetTime">
+<area shape="rect" id="node1" title="Set time components atomically." alt="" coords="5,5,115,32"/>
+<area shape="rect" id="node2" href="$classTime.html#ac0e33c841b5d350c53d45cfdf957727b" title="Validate hour and minute values." alt="" coords="163,5,261,32"/>
+</map>
