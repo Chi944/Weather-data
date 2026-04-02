@@ -299,7 +299,7 @@ static void test10()
     std::string content = fileRead("app_blank.csv");
     bool ok = content.find("January") != std::string::npos
            && content.find(",,")      != std::string::npos;
-    report(10, "Option 4 blank field: hasTemp=false -> ',,' in CSV (per A2 spec)",
+    report(10, "Option 4 blank field: hasTemp=false -> ',,' in CSV",
            ok);
 }
 
@@ -318,7 +318,7 @@ static void test11()
     std::string content = fileRead("app_nodata.csv");
     bool ok = content.find("2099")    != std::string::npos
            && content.find("No Data") != std::string::npos;
-    report(11, "Option 4 'No Data': year on line 1, 'No Data' on line 2 (per A2 spec)",
+    report(11, "Option 4 'No Data': year on line 1, 'No Data' on line 2",
            ok);
 }
 
@@ -631,7 +631,7 @@ static void test25()
 
     report(25,
         "Bst<long long> ascending stress test: 3000 ascending inserts, "
-        "search/destroyTree iterative — no stack overflow",
+        "search/destroyTree iterative no stack overflow",
         sizeOk && searchLo && searchHi && searchNo && emptyAfter);
 }
 
@@ -640,7 +640,7 @@ static void test25()
 // ---------------------------------------------------------------------------
 int main()
 {
-    std::cout << "=== ApplicationTest (comprehensive — 25 tests) ===" << std::endl;
+    std::cout << "=== ApplicationTest (comprehensive 25 tests) ===" << std::endl;
     std::cout << std::endl;
 
     test1();  test2();  test3();  test4();  test5();

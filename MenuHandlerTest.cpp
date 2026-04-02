@@ -1,6 +1,6 @@
     /**
      * @file MenuHandlerTest.cpp
-     * @brief Unit tests for MenuHandler (Assignment 2) — Test Plan tests 1-7
+     * @brief Unit tests for MenuHandler — Test Plan tests 1-7
      *
      * Strategy: redirect std::cout to a std::ostringstream before each call
      * and inspect the captured string.  Stdin-dependent methods (DisplayMenu,

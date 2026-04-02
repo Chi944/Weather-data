@@ -9,7 +9,7 @@
      *   size, inOrderTraversal (empty/ordered), preOrderTraversal,
      *   postOrderTraversal, and large ascending-order stress test.
      *
-     * ITERATIVE vs RECURSIVE (Bst.h version 4.0)
+     * ITERATIVE vs RECURSIVE
      * --------------------------------------------------
      * insert()     — ITERATIVE (pointer loop, no call stack)
      * search()     — ITERATIVE (pointer loop, no call stack)
@@ -427,7 +427,7 @@ static void test19()
 
     report(19,
         "Large ascending stress test: 5000 ascending inserts, "
-        "search first/last/absent, destroyTree via copy-assign — "
+        "search first/last/absent, destroyTree via copy-assign "
         "all iterative, no stack overflow",
         sizeOk && searchLo && searchHi && searchNo && emptyAfter);
 }
@@ -437,7 +437,7 @@ static void test19()
 // ---------------------------------------------------------------------------
 int main()
 {
-    std::cout << "=== BstTest (comprehensive — 19 tests) ===" << std::endl;
+    std::cout << "=== BstTest (comprehensive 19 tests) ===" << std::endl;
     std::cout << "    insert/search/destroyTree: ITERATIVE (safe for large trees)" << std::endl;
     std::cout << "    deleteNode/traversals:     RECURSIVE (small year BST only)" << std::endl;
     std::cout << std::endl;

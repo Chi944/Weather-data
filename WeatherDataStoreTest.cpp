@@ -12,6 +12,7 @@
 
 #include <iostream>
 #include <string>
+#include <cmath>
 #include "WeatherDataStore.h"
 #include "WeatherRecord.h"
 #include "Date.h"

@@ -8,12 +8,6 @@
      *   size()      — entry count; size()==0 replaces the old isEmpty()
      *   getKey(i)   — key at index; combined with getPtr replaces old getValue(i)
      *
-     * Previously tested methods that have been removed in version 2.0:
-     *   contains()   — replaced by getPtr(key) != nullptr
-     *   isEmpty()    — replaced by size() == 0
-     *   remove()     — never called in the application; removed from interface
-     *   getValue(i)  — replaced by getPtr(getKey(i))
-     *
      * @author Deston
      * @date 25/03/2026
      */
@@ -42,7 +36,7 @@ static void test1()
     Map<int,int> m;
     bool ok = m.size() == 0
            && m.getPtr(1) == nullptr;
-    report(1, "Empty Map: size()==0; getPtr(1)==nullptr (replaces isEmpty+contains)", ok);
+    report(1, "Empty Map: size()==0; getPtr(1)==nullptr", ok);
 }
 
 // ---------------------------------------------------------------------------
@@ -83,7 +77,7 @@ static void test4()
     Map<int,int> m;
     m[1] = 10;
     bool ok = m.getPtr(99) == nullptr;
-    report(4, "getPtr(99)==nullptr for absent key (replaces contains()==false)", ok);
+    report(4, "getPtr(99)==nullptr for absent key", ok);
 }
 
 // ---------------------------------------------------------------------------
@@ -123,7 +117,7 @@ static void test7()
     bool s2 = m.size() == 2;
     m[30] = 3;
     bool s3 = m.size() == 3;
-    report(7, "size() grows: 0 -> 1 -> 2 -> 3 (size()==0 replaces isEmpty())", s0 && s1 && s2 && s3);
+    report(7, "size() grows: 0 -> 1 -> 2 -> 3", s0 && s1 && s2 && s3);
 }
 
 // ---------------------------------------------------------------------------
@@ -190,7 +184,7 @@ static void test10()
         const int* valPtr = inner->getPtr(3);
         ok = (valPtr != nullptr) && (*valPtr == 99);
     }
-    report(10, "Nested Map[5][3]=99: inner getPtr(3)!=nullptr; value=99 (no contains used)", ok);
+    report(10, "Nested Map[5][3]=99: inner getPtr(3)!=nullptr; value=99", ok);
 }
 
 // ---------------------------------------------------------------------------
@@ -200,7 +194,6 @@ int main()
 {
     std::cout << "=== MapTest (4-method interface) ===" << std::endl;
     std::cout << "    Public methods: operator[], getPtr(), size(), getKey()" << std::endl;
-    std::cout << "    Removed: contains(), isEmpty(), remove(), getValue()" << std::endl;
     std::cout << std::endl;
 
     test1(); test2(); test3(); test4(); test5();

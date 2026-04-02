@@ -1,12 +1,12 @@
     /**
      * @file OutputHandlerTest.cpp
-     * @brief Unit tests for OutputHandler (Assignment 2) — Test Plan tests 1-12
+     * @brief Unit test for OutputHandler — Test Plan tests 1-12
      *
      * Strategy: redirect std::cout to a std::ostringstream before each call
      * and inspect the captured string.  CSV methods write to a temporary
      * std::ostringstream-backed stream so no real files are created.
      *
-     * Tests cover all Assignment 2 methods: DisplaySPCCHeader, DisplaySPCC,
+     * Tests methods covered: DisplaySPCCHeader, DisplaySPCC,
      * DisplaySPCCNoData, WriteCSVRow with stdev+MAD, WriteCSVNoData, and the
      * existing option-1/2/4 methods to confirm they still produce correct output.
      *

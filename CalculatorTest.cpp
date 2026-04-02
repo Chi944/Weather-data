@@ -1,6 +1,6 @@
     /**
      * @file CalculatorTest.cpp
-     * @brief Unit tests for Calculator (Assignment 2) — Test Plan tests 1-6
+     * @brief Unit tests for Calculator — Test Plan tests 1-6
      *
      * Tests cover: CalculateWindStats with MAD, empty-store guards,
      * CalculateTempStats with MAD, CalculateSolarTotal threshold,
@@ -127,7 +127,7 @@ static void test6()
 
 int main()
 {
-    std::cout << "=== CalculatorTest (A2) ===" << std::endl;
+    std::cout << "=== CalculatorTest ===" << std::endl;
     test1(); test2(); test3(); test4(); test5(); test6();
     std::cout << std::endl << "Results: " << passed << " passed, "
               << failed << " failed." << std::endl;
